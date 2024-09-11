@@ -1,1 +1,2 @@
-console.log("Hello World!")
+var message = "Привет, лолик!";
+console.log(message);
