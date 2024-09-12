@@ -1,4 +1,7 @@
-for (var sheepedCounted = 0; sheepedCounted < 10; sheepedCounted++) {
-    console.log("Овец: " + sheepedCounted);
+var animals = ["Кот", "Рыба", "Лемур", "Комодский варан"];
+for (var i = 0; i < animals.length; i++) {
+    console.log(animals[i] + " - прекрасное животное");
+    animals[i] = animals[i] + " - прекрасное животное";
 }
-console.log("Sleep");
+
+console.log(animals)
