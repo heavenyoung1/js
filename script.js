@@ -1,8 +1,6 @@
-var name = "Лариса";
-console.log("Привет " + name);
-if (name.length > 10) {
-    console.log("Line name");
+var sheepCounted = 0;
+while (sheepCounted < 10) {
+    console.log("Подсчитано овец: " + sheepCounted + "!")
+    sheepCounted++;
 }
-else {
-    console.log("Not line name")
-}
+console.log("Sleep!");
