@@ -1,6 +1,4 @@
-var sheepCounted = 0;
-while (sheepCounted < 10) {
-    console.log("Подсчитано овец: " + sheepCounted + "!")
-    sheepCounted++;
+for (var sheepedCounted = 0; sheepedCounted < 10; sheepedCounted++) {
+    console.log("Овец: " + sheepedCounted);
 }
-console.log("Sleep!");
+console.log("Sleep");
