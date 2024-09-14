@@ -11,8 +11,12 @@
         <p>Моя первая веб-страничка.</p>
         
             <script>
-                var name = prompt("Как вас зовут?");
-                console.log("Привет", name)
+                var likeCats = confirm("Тебе нравятся кошки?");
+                if (likeCats) {
+                    console.log("Ты классная кошка");
+                } else {
+                    console.log("Так нельзя!")
+                }
             </script>
 </body>
 </html>
