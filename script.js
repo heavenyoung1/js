@@ -1,15 +1,16 @@
+var drawCats = function (howManyTimes) { 
+    for (var i = 0; i < howManyTimes; i++) {
+        console.log(i + " =^.^=");
+    }
+}
+
 var sayHelloTo = function (name) {
     console.log("Привет, " + name + "!");
 };
 
-
-
-// var outFirstFunction = function () {
-//     console.log("Hello, World!");
-// };
-
-// outFirstFunction();
-
+var outFirstFunction = function () {
+    console.log("Hello, World!");
+};
 
 // var words = [
 //     "программа",
