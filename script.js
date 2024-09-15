@@ -1,8 +1,14 @@
-var outFirstFunction = function () {
-    console.log("Hello, World!");
+var sayHelloTo = function (name) {
+    console.log("Привет, " + name + "!");
 };
 
-outFirstFunction();
+
+
+// var outFirstFunction = function () {
+//     console.log("Hello, World!");
+// };
+
+// outFirstFunction();
 
 
 // var words = [
