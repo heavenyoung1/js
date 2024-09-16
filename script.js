@@ -1,3 +1,9 @@
+
+
+var double = function (number) {
+    return 2 * number;
+};
+
 var drawCats = function (howManyTimes) { 
     for (var i = 0; i < howManyTimes; i++) {
         console.log(i + " =^.^=");
