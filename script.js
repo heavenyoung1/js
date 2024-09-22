@@ -1,3 +1,13 @@
+// Короткая запись функции
+function double(number) {
+    return number * 2;
+}
+
+// Длинная запись функции
+var doubleTiny = function (number) {
+    return number * 2;
+}
+
 var pickRandomWord = function (words) {
     return words[Math.floor(Math.random() * words.length)];
 }
