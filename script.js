@@ -1,27 +1,34 @@
-
-var randomWords = ["Planet", "Bug", "Choice"];
-
 var pickRandomWord = function (words) {
     return words[Math.floor(Math.random() * words.length)];
 }
 
-var double = function (number) {
-    return 2 * number;
-};
+var randomWords = ["Planet", "Bug", "Choice"];
 
-var drawCats = function (howManyTimes) { 
-    for (var i = 0; i < howManyTimes; i++) {
-        console.log(i + " =^.^=");
-    }
+var generateRandomInput = function () {
+    var randomBodyPart = ["глаз", "нос", "череп"];
+    var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+    var randomWords = ["муха", "выдра", "дубина", "мартышка", "какашка"];
+    var randomString = "У тебя " + pickRandomWord(randomBodyPart) + ", словно " + pickRandomWord(randomWords) + "!!!";
+    return randomString;
 }
 
-var sayHelloTo = function (name) {
-    console.log("Привет, " + name + "!");
-};
+// var double = function (number) {
+//     return 2 * number;
+// };
 
-var outFirstFunction = function () {
-    console.log("Hello, World!");
-};
+// var drawCats = function (howManyTimes) { 
+//     for (var i = 0; i < howManyTimes; i++) {
+//         console.log(i + " =^.^=");
+//     }
+// }
+
+// var sayHelloTo = function (name) {
+//     console.log("Привет, " + name + "!");
+// };
+
+// var outFirstFunction = function () {
+//     console.log("Hello, World!");
+// };
 
 // var words = [
 //     "программа",
