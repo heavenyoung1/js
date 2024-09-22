@@ -1,4 +1,9 @@
 
+var randomWords = ["Planet", "Bug", "Choice"];
+
+var pickRandomWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)];
+}
 
 var double = function (number) {
     return 2 * number;
