@@ -1,7 +1,10 @@
-var headingElement = document.getElementById("main-heading");
-console.log(headingElement.innerHTML);
 var newHeadingText = prompt("Enter new Header");
-headingElement.innerHTML = newHeadingText;
+$("#main-heading").text(newHeadingText);
+
+// var headingElement = document.getElementById("main-heading");
+// console.log(headingElement.innerHTML);
+// var newHeadingText = prompt("Enter new Header");
+// headingElement.innerHTML = newHeadingText;
 
 // function areArraySame(arrayA, arrayB) {
 //     if (arrayA.length != arrayB.length) {
