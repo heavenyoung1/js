@@ -1,26 +1,32 @@
+for (var i = 0; i < 3; i++) {
+    var hobby = prompt("Назови одно хобби");
+    $("body").append("<p>" + hobby +"</p>")
+}
+
 var newHeadingText = prompt("Enter new Header");
 $("#main-heading").text(newHeadingText);
+$("body").append("<p>Это новый параграф</p>")
 
-// var headingElement = document.getElementById("main-heading");
-// console.log(headingElement.innerHTML);
-// var newHeadingText = prompt("Enter new Header");
-// headingElement.innerHTML = newHeadingText;
+var headingElement = document.getElementById("main-heading");
+console.log(headingElement.innerHTML);
+var newHeadingText = prompt("Enter new Header");
+headingElement.innerHTML = newHeadingText;
 
-// function areArraySame(arrayA, arrayB) {
-//     if (arrayA.length != arrayB.length) {
-//         return false;    
-//     } else if (arrayA.length === arrayB.length) {
-//     for (var i = 0; i < arrayA.length; i++) {
-//         for (var j = 0; j < arrayB.length; j++) {
-//             console.log(" i " + arrayA[i])                
-//             console.log(" j " + arrayB[j])
-//             if (arrayA[i] !== arrayB[i]) {
+function areArraySame(arrayA, arrayB) {
+    if (arrayA.length != arrayB.length) {
+        return false;    
+    } else if (arrayA.length === arrayB.length) {
+    for (var i = 0; i < arrayA.length; i++) {
+        for (var j = 0; j < arrayB.length; j++) {
+            console.log(" i " + arrayA[i])                
+            console.log(" j " + arrayB[j])
+            if (arrayA[i] !== arrayB[i]) {
 
-//             }
-//         }
-//     }
-//     }
-// }
+            }
+        }
+    }
+    }
+}
 
 var arrayOne = ([1, 2, 3], [4, 5, 6]);
 var arrayTwo = ([1, 2, 3], [4, 5, 6]);
