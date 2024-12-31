@@ -67,3 +67,13 @@ let q1 = 5;
 let q2 = 6;
 let q3 = 7;
 console.log(q1++ + ++q2 * q3++);
+
+// Гипотенуза прямоугольного треугольника
+
+let a = prompt("Please, input cathetus a");
+let b = prompt("Please, input cathetus b");
+let cQuadro = a * a + b * b;
+let c = cQuadro ** 0.5;
+console.log(c);
+alert(`Hypotenyse = ${c}`);
+
