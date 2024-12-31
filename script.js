@@ -13,3 +13,8 @@ console.log(strToBool, typeof strToBool);
 let strToBool2 = "";
 strToBool2 = Boolean(strToBool2);
 console.log(strToBool2, typeof strToBool2);
+
+let nr1 = 2;
+let nr2 = "2";
+console.log(nr1 + nr2);
+console.log(nr1 + Number(nr2));
