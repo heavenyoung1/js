@@ -52,6 +52,13 @@ console.log(result5);
 let quadro = nr1 ** Number(nr2);
 console.log(quadro);
 
-let balance = nr1 % 3;
-console.log(balance)
+let x = 10;
+let y = 3
+let balance = x % y;
+console.log(`${x} % ${y} = ${balance}`);
 
+
+nr1++;
+console.log(nr1);
+nr1--;
+console.log(nr1);
