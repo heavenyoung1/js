@@ -62,3 +62,8 @@ nr1++;
 console.log(nr1);
 nr1--;
 console.log(nr1);
+
+let q1 = 5;
+let q2 = 6;
+let q3 = 7;
+console.log(q1++ + ++q2 * q3++);
