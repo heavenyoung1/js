@@ -77,20 +77,28 @@ console.log(q1++ + ++q2 * q3++);
 // console.log(c);
 // alert(`Hypotenyse = ${c}`);
 
-let a = 5;
-let b = "5";
-let c = 7;
-a += b;
-a /= c;
-c = c % b;
-console.log(a, b ,c);
+let l = 5;
+let k = 6;
+let g = 7;
+// a += b;
+// a /= c;
+// c = c % b;
+// console.log(a, b ,c);
+// console.log("STOP IT!");
+
+// console.log(a == b);
+// console.log(a != b);
+// console.log(a === b);
+// console.log(a !== b);
+
+// console.log(a > b);
+// console.log(a <= c);
+
 console.log("STOP IT!");
 
-console.log(a == b);
-console.log(a != b);
-console.log(a === b);
-console.log(a !== b);
-
+console.log(l < k && k < g);
+console.log(l < k || k < g);
+console.log(!(l < k));
 
 
 
