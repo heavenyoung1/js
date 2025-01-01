@@ -70,10 +70,21 @@ console.log(q1++ + ++q2 * q3++);
 
 // Гипотенуза прямоугольного треугольника
 
-let a = prompt("Please, input cathetus a");
-let b = prompt("Please, input cathetus b");
-let cQuadro = a * a + b * b;
-let c = cQuadro ** 0.5;
-console.log(c);
-alert(`Hypotenyse = ${c}`);
+// let a = window.prompt("Please, input cathetus a");
+// let b = window.prompt("Please, input cathetus b");
+// let cQuadro = a * a + b * b;
+// let c = cQuadro ** 0.5;
+// console.log(c);
+// alert(`Hypotenyse = ${c}`);
+
+let a = 5;
+let b = 6;
+let c = 7;
+a += b;
+a /= c;
+c = c % b;
+console.log(a, b ,c);
+
+
+
 
