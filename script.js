@@ -78,12 +78,18 @@ console.log(q1++ + ++q2 * q3++);
 // alert(`Hypotenyse = ${c}`);
 
 let a = 5;
-let b = 6;
+let b = "5";
 let c = 7;
 a += b;
 a /= c;
 c = c % b;
 console.log(a, b ,c);
+console.log("STOP IT!");
+
+console.log(a == b);
+console.log(a != b);
+console.log(a === b);
+console.log(a !== b);
 
 
 
