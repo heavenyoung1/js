@@ -100,5 +100,16 @@ console.log(l < k && k < g);
 console.log(l < k || k < g);
 console.log(!(l < k));
 
+arr = new Array(10);
+arr2 = [10, 11, "lol", null, undefined];
+
+console.log(arr);
+console.log(arr2);
+
+const arr3 = ["hi there"];
+arr3[0] = "new value";
+console.log(arr3[0]);
+
+arr3 = ["wefwefeffefwedwdws"]
 
 
