@@ -110,6 +110,17 @@ const arr3 = ["hi there"];
 arr3[0] = "new value";
 console.log(arr3[0]);
 
-arr3 = ["wefwefeffefwedwdws"]
+arr3[0] = ["wefwefeffefwedwdws"];
+console.log(arr3);
 
+cars = ["Mercedes", "BMW", "VAG"];
+cars[-1] = "Tesla";
+console.log(cars[-1]);
+console.log(cars);
 
+console.log(cars.length);
+lastElement = cars[cars.length - 1];
+console.log(lastElement);
+cars[10] = "Maybach";
+console.log(cars);
+console.log(cars.length);
