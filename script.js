@@ -178,3 +178,17 @@ console.log(arr8);
 // Метод .delete()
 delete arr8[0];
 console.log(arr8);
+
+// Метод find
+arr9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let findValue = arr9.find(function(e) {return e === 6});
+let findValue2 = arr9.find(e => e === 10);
+console.log(findValue, findValue2);
+
+let findIndex = arr9.indexOf(6);
+let findIndex2 = arr9.indexOf(10);
+console.log(arr9);
+console.log(findIndex, findIndex2);
+let findIndex3 = arr9.indexOf(3, 2);
+console.log(findIndex3);
+
