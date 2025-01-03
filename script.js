@@ -161,3 +161,20 @@ let arr7 = arr5.concat(arr6);
 console.log(arr7);
 let arr8 = arr7.concat(7, 8, 9);
 console.log(arr8);
+
+arr8.pop();
+
+// Метод .pop для удаления последнего элемента
+console.log(arr8);
+
+// Метод .shift для удаления первого элемента
+arr8.shift();
+console.log(arr8);
+
+// Удаление элементов методом .splice
+arr8.splice(0, 2);
+console.log(arr8);
+
+// Метод .delete()
+delete arr8[0];
+console.log(arr8);
