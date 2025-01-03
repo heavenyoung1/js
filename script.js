@@ -192,3 +192,8 @@ console.log(findIndex, findIndex2);
 let findIndex3 = arr9.indexOf(3, 2);
 console.log(findIndex3);
 
+let animals = ["dog", "cat", "horse", "dog"];
+let lastDog = animals.lastIndexOf("dog");
+console.log(lastDog);
+
+
