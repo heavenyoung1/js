@@ -124,3 +124,15 @@ console.log(lastElement);
 cars[10] = "Maybach";
 console.log(cars);
 console.log(cars.length);
+
+// Практическое задание 3.1
+goods= [
+    "Milk",
+    "Bread",
+    "Apples",
+];
+
+console.log(goods.length);
+goods[1] = "Bananas";
+console.log(goods);
+
