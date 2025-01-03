@@ -136,3 +136,23 @@ console.log(goods.length);
 goods[1] = "Bananas";
 console.log(goods);
 
+favoriteFruits = [
+    "grapefruit",
+    "orange",
+    "lemon",
+];
+
+favoriteFruits.push("tangerine");
+console.log(favoriteFruits);
+
+let arrOfShapes = [
+    "circle",
+    "triangle",
+    "rectangle",
+    "pentagon",
+];
+
+arrOfShapes.splice(2, 2, "square", "trapezoid");
+console.log(arrOfShapes);
+
+
