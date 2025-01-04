@@ -241,3 +241,9 @@ console.log(arrOfArraysOfArrays);
 let middleValue = arrOfArraysOfArrays[1][1][1];
 console.log(middleValue);
 
+// Практическое занятие 3.3
+
+let someArr0 = [1, 2, 3];
+let someArr = [someArr0, someArr0, someArr0];
+console.log(someArr[1][1]);
+
