@@ -204,3 +204,26 @@ console.log(names.sort());
 let ages = [10, 12, 14, 20, 40, 1, 99];
 console.log(ages.reverse());
 
+// Практическое занятие 3.2
+
+let buys = [];
+console.log(buys);
+buys.push("Milk", "Bread", "Apples", "Potato", "Fish", "Apelsine");
+buys.splice(1, 1, "Bananas", "Eggs");
+console.log(buys);
+buys.pop();
+console.log(buys);
+buys.sort();
+let inMilk =  buys.indexOf("Milk");
+console.log(inMilk);
+buys.splice(2, 0, "Carrots", "Letucce");
+console.log(buys);
+let buys2 = ["Juice", "Pop"];
+let mainBuys = buys.concat(buys2);
+let mainBuys2 = mainBuys.concat(buys2);
+console.log(mainBuys2);
+let lookingForPopForEnd = Number(mainBuys2.length) - Number(buys2.length);
+let inPop = mainBuys2.indexOf("Pop", lookingForPopForEnd);
+console.log(inPop);
+
+
