@@ -226,4 +226,18 @@ let lookingForPopForEnd = Number(mainBuys2.length) - Number(buys2.length);
 let inPop = mainBuys2.indexOf("Pop", lookingForPopForEnd);
 console.log(inPop);
 
+// Многомерные массивы
+let someValue1 = [1, 2, 3];
+let someValue2 = [4, 5, 6];
+let someValue3 = [7, 8, 9];
+
+let arrofArrays = [someValue1, someValue2, someValue3];
+console.log(arrofArrays);
+let value1 = arrofArrays[0][0];
+console.log(value1);
+
+let arrOfArraysOfArrays = [arrofArrays, arrofArrays, arrofArrays];
+console.log(arrOfArraysOfArrays);
+let middleValue = arrOfArraysOfArrays[1][1][1];
+console.log(middleValue);
 
