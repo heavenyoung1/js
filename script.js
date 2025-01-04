@@ -247,3 +247,14 @@ let someArr0 = [1, 2, 3];
 let someArr = [someArr0, someArr0, someArr0];
 console.log(someArr[1][1]);
 
+let dog = {
+    dogName: "JavaScript",
+    weight: 2.4,
+    color: "brown",
+    breed: "Chihuahua",
+    age: 3,
+}
+
+let dogColor = dog["color"];
+let dogName = dog.dogName;
+console.log(dogName, dogColor);
