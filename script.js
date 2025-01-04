@@ -196,4 +196,8 @@ let animals = ["dog", "cat", "horse", "dog"];
 let lastDog = animals.lastIndexOf("dog");
 console.log(lastDog);
 
+// Сортировка
+
+let names = ["Alica", "Eugene", "Adam", "Larisa", "Jacob", "Edvard"];
+console.log(names.sort());
 
