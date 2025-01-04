@@ -247,6 +247,7 @@ let someArr0 = [1, 2, 3];
 let someArr = [someArr0, someArr0, someArr0];
 console.log(someArr[1][1]);
 
+// Объекты, кажется очень сильно напоминают словари в python
 let dog = {
     dogName: "JavaScript",
     weight: 2.4,
@@ -258,3 +259,13 @@ let dog = {
 let dogColor = dog["color"];
 let dogName = dog.dogName;
 console.log(dogName, dogColor);
+
+dog["color"] = "blue";
+dog.age = 100;
+console.log(dog);
+dog.age = "one hundred";
+console.log(dog);
+
+let variableAgeOfDogs = "age";
+console.log(dog[variableAgeOfDogs]);
+console.log(dog["breed"]);
