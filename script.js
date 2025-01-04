@@ -201,3 +201,6 @@ console.log(lastDog);
 let names = ["Alica", "Eugene", "Adam", "Larisa", "Jacob", "Edvard"];
 console.log(names.sort());
 
+let ages = [10, 12, 14, 20, 40, 1, 99];
+console.log(ages.reverse());
+
