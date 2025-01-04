@@ -269,3 +269,17 @@ console.log(dog);
 let variableAgeOfDogs = "age";
 console.log(dog[variableAgeOfDogs]);
 console.log(dog["breed"]);
+
+// Практическое занятие 3.4
+let myCar = {
+    made: 2000,
+    model: "X",
+    name: "Tesla",
+    horsePower: 796,
+    isElectro: true,
+    color: "pink",
+}
+
+let color = "color"
+myCar.color = "black";
+console.log(myCar);
