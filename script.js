@@ -332,3 +332,4 @@ friendThree = {
 
 people.friends.push(friendOne, friendTwo, friendThree);
 console.log(people);
+
