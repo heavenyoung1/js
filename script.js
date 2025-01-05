@@ -283,3 +283,26 @@ let myCar = {
 let color = "color"
 myCar.color = "black";
 console.log(myCar);
+
+// Работа с объектами и массивами
+
+let company = {
+    companyName: "Healthy Candy",
+    activities: [
+        "food manufacturing",
+        "improving kids health",
+        "manufacturing toys",
+    ],
+    adress: [{
+        street: "2nd streer",
+        city: "Miami",
+    },
+    {
+        street: "1st West Avenue",
+        city: "Austin",
+    }],
+    yearOfEstablishment: 1945,
+};
+
+let streetFirstName = company.adress[0].street;
+console.log(streetFirstName);
