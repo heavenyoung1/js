@@ -306,3 +306,29 @@ let company = {
 
 let streetFirstName = company.adress[0].street;
 console.log(streetFirstName);
+
+// Практическое занятие 3.5
+let people = {
+    friends: [],
+};
+
+friendOne = {
+    firstName: "Elon",
+    lastName: "Musk",
+    ID: 1,
+};
+
+friendTwo = {
+    firstName: "Homer",
+    lastName: "Simpson",
+    ID: 2,
+};
+
+friendThree = {
+    firstName: "Elon",
+    lastName: "Musk",
+    ID: 1,
+};
+
+people.friends.push(friendOne, friendTwo, friendThree);
+console.log(people);
