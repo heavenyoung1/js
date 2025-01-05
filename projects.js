@@ -4,11 +4,11 @@
 
 // Индекс массы тела
 
-let length = prompt("Введите рост в дюймах")
-let weight = prompt("Введите вес в фунтах")
-console.log(`Рост: ${length} дюймов. Вес: ${weight} фунтов.`)
-let imt = (weight * 0.453592) / ((length * 0.393701) ** 2) 
-console.log(`Ваш ИМТ: ${imt}`)
+// let length = prompt("Введите рост в дюймах")
+// let weight = prompt("Введите вес в фунтах")
+// console.log(`Рост: ${length} дюймов. Вес: ${weight} фунтов.`)
+// let imt = (weight * 0.453592) / ((length * 0.393701) ** 2) 
+// console.log(`Ваш ИМТ: ${imt}`)
 
 // Управление массивом 
 
@@ -37,3 +37,30 @@ theList[2] = "MIDDLE";
 theList.push("LAST");
 theList.splice(4, 3);
 console.log(theList);
+
+// Каталог продукции компании
+
+let goods = [];
+
+product1 = {
+    prName: "Apple Lisa",
+    models: "X",
+    cost: 200,
+    count: 10,
+} 
+product2 = {
+    prName: "Tesla Model X",
+    models: "X",
+    cost: 200,
+    count: 10,
+} 
+product3 = {
+    prName: "BMW M5",
+    models: "X",
+    cost: 200,
+    count: 10,
+} 
+
+goods.push(product1, product2, product3);
+console.log(goods);
+console.log()
