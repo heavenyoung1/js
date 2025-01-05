@@ -64,3 +64,4 @@ product3 = {
 goods.push(product1, product2, product3);
 console.log(goods);
 console.log()
+
