@@ -364,3 +364,17 @@ if (boolX) {
 else {
     "Good Bye, buddy!";
 }
+
+// Практическое занятие 4.2
+
+let agePerson = prompt("Input your age!");
+let messageOne = String("");
+if (agePerson >= 21) {
+    messageOne = String("Buy Alchhol");
+} else if (agePerson >= 19) {
+    messageOne = String("Enter but no alchohol!");
+} else {
+    messageOne = String("NOT ENTER!");    
+}
+alert(messageOne);
+
