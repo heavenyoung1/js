@@ -33,10 +33,10 @@ console.log(
     typeof myNum,
 );
 
-let myName = "Evgeny";
-let age = "25";
-let yesOrNot = true;
-console.log("Hello, my name is " + myName + " I am " + age + " years " + "and I can code JS: " + yesOrNot);
+// let myName = "Evgeny";
+// let age = "25";
+// let yesOrNot = true;
+// console.log("Hello, my name is " + myName + " I am " + age + " years " + "and I can code JS: " + yesOrNot);
 
 let result1 = nr1 - Number(nr2);
 let result2 = str1 - nr1;
@@ -367,14 +367,20 @@ else {
 
 // Практическое занятие 4.2
 
-let agePerson = prompt("Input your age!");
-let messageOne = String("");
-if (agePerson >= 21) {
-    messageOne = String("Buy Alchhol");
-} else if (agePerson >= 19) {
-    messageOne = String("Enter but no alchohol!");
-} else {
-    messageOne = String("NOT ENTER!");    
-}
-alert(messageOne);
+// let agePerson = prompt("Input your age!");
+// let messageOne = String("");
+// if (agePerson >= 21) {
+//     messageOne = String("Buy Alchhol");
+// } else if (agePerson >= 19) {
+//     messageOne = String("Enter but no alchohol!");
+// } else {
+//     messageOne = String("NOT ENTER!");    
+// }
+// alert(messageOne);
 
+// let age = prompt("Сколько вам лет?")
+// let acess = age > 18 ? console.log("YES") : console.log("NO")
+
+// Практическое занятие 4.3
+let ID = prompt("ВВЕДИ ID")
+let message = ID == 5 ? console.log("YES") : console.log("NO")
