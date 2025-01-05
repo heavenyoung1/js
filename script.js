@@ -348,3 +348,19 @@ const myArr3 = [3, 6, 8, 9, 3, 55, 553, 434];
 myArr3.sort();
 myArr3.length = 0;
 console.log(myArr3[0]);
+
+const myArr1 = [1, 3, 5, 6, 8, 9, 15];
+console.log(myArr1.indexOf(0));
+
+// Практическое занятие 4.1
+
+let boolX = false;
+console.log(boolX);
+if (boolX) {
+    console.log("Hi, Lol!");
+} if (!boolX){
+    console.log("Sorry, boyzzz!");
+}
+else {
+    "Good Bye, buddy!";
+}
