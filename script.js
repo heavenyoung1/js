@@ -382,5 +382,36 @@ else {
 // let acess = age > 18 ? console.log("YES") : console.log("NO")
 
 // Практическое занятие 4.3
-let ID = prompt("ВВЕДИ ID")
-let message = ID == 5 ? console.log("YES") : console.log("NO")
+// let ID = prompt("ВВЕДИ ID")
+// let message = ID == 5 ? console.log("YES") : console.log("NO")
+
+// Практическое занятие 4.4
+
+let randNum = Math.floor(Math.random() * 6);
+let userRequest = prompt("Введите вопрос");
+let msgFromRequest = "";
+switch (randNum) {
+    case 0:
+        msgFromRequest = "Answer 0"
+        break;
+    case 1:
+        msgFromRequest = "Answer 1"
+        break;
+    case 2:
+        msgFromRequest = "Answer 2"
+        break;
+    case 3:
+        msgFromRequest = "Answer 3"
+        break;
+    case 4:
+        msgFromRequest = "Answer 4"
+        break;
+    case 5:
+        msgFromRequest = "Answer 5"
+        break;
+    default:
+        msgFromRequest = "sorry bro(("
+}
+
+console.log(`Ты задал мне вопрос ${userRequest}, получил ответ - ${msgFromRequest}`);
+
