@@ -84,18 +84,51 @@
 
 // Игра "Проверь друга"
 
-let yourName = prompt("Введите ваше имя")
-switch (yourName) {
-    case "Elon":
-    case "Homer":
-    case "Donald":
-    case "Micky":
-        alert(`Hi, ${yourName}. You're welcome bro!`);
-        break;
-    case "Joe Biden":
-        alert("Go away man!");
-        break;
-    default:
-        alert(`Sorry, ${yourName}. You're not my friend. Go home!`);
-        break;
+// let yourName = prompt("Введите ваше имя")
+// switch (yourName) {
+//     case "Elon":
+//     case "Homer":
+//     case "Donald":
+//     case "Micky":
+//         alert(`Hi, ${yourName}. You're welcome bro!`);
+//         break;
+//     case "Joe Biden":
+//         alert("Go away man!");
+//         break;
+//     default:
+//         alert(`Sorry, ${yourName}. You're not my friend. Go home!`);
+//         break;
+// }
+
+// Игра " Камень - Ножницы - Бумага "
+// Камень > Ножницы and Камень > Бумага
+// Ножницы < Камень and Ножницы > Бумага
+// Бумага > Камень and Бумага > 
+
+let elements = ["Бумага", "Ножницы", "Камень"];
+let selPC = Math.floor(Math.random() * 3);
+let mySelect = Math.floor(Math.random() * 3);
+
+if (selPC != mySelect) {
+    if (selPC == 0 && mySelect == 1) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+    }
+    if (selPC == 0 && mySelect == 2) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+    }
+    if (selPC == 1 && mySelect == 0) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+    }
+    if (selPC == 1 && mySelect == 2) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+    }
+    if (selPC == 2 && mySelect == 0) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+    }
+    if (selPC == 2 && mySelect == 1) {
+        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+    }
+}
+else {
+    console.log("Ничья.")
 }
