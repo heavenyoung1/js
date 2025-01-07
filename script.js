@@ -436,3 +436,19 @@ switch (prize) {
         break;
 }
 alert(answ);
+
+// Вопрос для сампопроверки
+
+let login = false;
+let outputHolder = "";
+let userOkay = login ? outputHolder = "logout" : outputHolder = "login";
+console.log(userOkay);
+
+let a1 = 5;
+let b1 = 10;
+let c1 = 20;
+let d1 = 30;
+console.log(a1 > b1 || b1 > a1);
+console.log(a1 > b1 && b1 > a1);
+console.log(d1 > b1 || b1 > a1);
+console.log(d1 > b1 && b1 > a1);
