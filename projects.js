@@ -65,3 +65,19 @@ goods.push(product1, product2, product3);
 console.log(goods);
 console.log()
 
+// ППРОЕКТЫ ИЗ ГАВЫ 4
+
+// Игра в рулетку
+
+let usrNum = prompt("Введите число от 1 до 100!");
+let rndNum = Math.floor(Math.random() * 100);
+let msg = "";
+
+if (usrNum > rndNum) {
+    msg = `Ваше значение ${usrNum} больше, чем ${rndNum}!`;
+} else if (usrNum < rndNum) {
+    msg = `Ваше значение ${usrNum} меньше, чем ${rndNum}!`;
+} else {
+    msg = "Sorry, bro";
+}
+alert(msg);
