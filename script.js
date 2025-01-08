@@ -474,10 +474,34 @@ console.log(d1 > b1 && b1 > a1);
 
 // Практическое занятие 5.2
 
-let count = 0;
-let step = 2;
-do {
-    count += step;
-    console.log(`Счётчик увеличен до ${count}.`);
-} while (count <= 99);
+// let count = 0;
+// let step = 2;
+// do {
+//     count += step;
+//     console.log(`Счётчик увеличен до ${count}.`);
+// } while (count <= 99);
 
+// Практическое занятие 5.3
+
+let myWork = [];
+let statusLesson;
+let nameLesson;
+let lessonAbs = {}
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+        nameLesson = `Lesson ${i}`;
+        statusLesson = Boolean(Math.floor(Math.random() * 2));
+        lessonAbs = {name: nameLesson, status: statusLesson};
+        myWork.push(lessonAbs);
+    } else {
+        nameLesson = `Lesson ${i}`;
+        statusLesson = Boolean(Math.floor(Math.random() * 2));
+        lessonAbs = {name: nameLesson, status: statusLesson};
+        myWork.push(lessonAbs);
+    }
+}
+
+for (i = 0; i < myWork.length; i++) {
+    console.log(myWork[i]);
+}
