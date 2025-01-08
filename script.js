@@ -511,7 +511,6 @@ for (i = 0; i < myWork.length; i++) {
 let myTable = [];
 let line = 6;
 let column = 6;
-let count = 0;
 let tempArray = [];
 
 for (let i = 0; i < column; i++) {
@@ -525,3 +524,27 @@ for (let i = 0; i < column; i++) {
 }
 
 console.table(myTable);
+
+// Практическое занятие 5.5
+
+let grid = []
+let cell = 64;
+let counter = 0;
+let row = [];
+
+for (let i = 0; i < cell; i++) {
+    row.push(counter)
+    if ((i + 1) % 8 == 0) {
+        if (row.length > 0) {
+            grid.push(row);
+        }
+        row = [];
+    }
+    counter++;
+
+}
+if (row.length > 0) {
+    grid.push(row);
+}
+
+console.log(grid);
