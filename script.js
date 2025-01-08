@@ -505,3 +505,23 @@ for (let i = 1; i <= 100; i++) {
 for (i = 0; i < myWork.length; i++) {
     console.log(myWork[i]);
 }
+
+// Практическое занятие 5.4
+
+let myTable = [];
+let line = 6;
+let column = 6;
+let count = 0;
+let tempArray = [];
+
+for (let i = 0; i < column; i++) {
+    tempArray.splice(0, tempArray.length);
+    console.log(0);
+    myTable.push(tempArray);
+    for (let j = 0; j < line; j++) {
+        console.log(0);     
+        tempArray.push(j); 
+    }
+}
+
+console.table(myTable);
