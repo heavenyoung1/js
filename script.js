@@ -548,3 +548,16 @@ if (row.length > 0) {
 }
 
 console.log(grid);
+
+// Практическое занятие 5.6
+
+let emptyArray = [];
+
+for (let i = 0; i < 10; i++) {
+    emptyArray.push(i);
+}
+
+for (i of emptyArray) {
+    console.log(i);
+}
+
