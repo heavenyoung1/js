@@ -455,20 +455,29 @@ console.log(d1 > b1 && b1 > a1);
 
 // Практическое занятие 5.1
 
-let randomNum = Math.floor((Math.random()) * 5);
-let correct = false;
+// let randomNum = Math.floor((Math.random()) * 5);
+// let correct = false;
 
-let usrGuess = -1;
+// let usrGuess = -1;
 
-while (correct == false){
-    usrGuess = prompt(`Введи число`)
-    if (usrGuess != randomNum) {
-        continue;
-    }
-    else if (usrGuess == randomNum) {
-        console.log(`Вы ввели ${usrGuess}. Число ${randomNum}`);
-        alert(`Вы ввели ${usrGuess}. Число ${randomNum}`);
-        correct = true;
-    }
-}
+// while (correct == false){
+//     usrGuess = prompt(`Введи число`)
+//     if (usrGuess != randomNum) {
+//         continue;
+//     }
+//     else if (usrGuess == randomNum) {
+//         console.log(`Вы ввели ${usrGuess}. Число ${randomNum}`);
+//         alert(`Вы ввели ${usrGuess}. Число ${randomNum}`);
+//         correct = true;
+//     }
+// }
+
+// Практическое занятие 5.2
+
+let count = 0;
+let step = 2;
+do {
+    count += step;
+    console.log(`Счётчик увеличен до ${count}.`);
+} while (count <= 99);
 
