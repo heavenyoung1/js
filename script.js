@@ -416,26 +416,26 @@ else {
 // console.log(`Ты задал мне вопрос ${userRequest}, получил ответ - ${msgFromRequest}`);
 
 // Практичесное занятие 4.5
-let prize = Number(prompt("Input number from 0 to 10."));
-let answ = "";
+// let prize = Number(prompt("Input number from 0 to 10."));
+// let answ = "";
 
 
-switch (prize) {
-    case 0:
-    case 1:
-    case 2:
-        answ = `ТЫ молодец, выбрал эту цифру ${prize}`;
-        break;
-    case 3:
-    case 4:
-    case 5:
-        answ = `ТЫ  НЕ молодец, выбрал эту цифру ${prize}`;
-        break;
-    default:
-        answ = `Sorry bro, you selected ${prize}`;
-        break;
-}
-alert(answ);
+// switch (prize) {
+//     case 0:
+//     case 1:
+//     case 2:
+//         answ = `ТЫ молодец, выбрал эту цифру ${prize}`;
+//         break;
+//     case 3:
+//     case 4:
+//     case 5:
+//         answ = `ТЫ  НЕ молодец, выбрал эту цифру ${prize}`;
+//         break;
+//     default:
+//         answ = `Sorry bro, you selected ${prize}`;
+//         break;
+// }
+// alert(answ);
 
 // Вопрос для сампопроверки
 
@@ -452,3 +452,23 @@ console.log(a1 > b1 || b1 > a1);
 console.log(a1 > b1 && b1 > a1);
 console.log(d1 > b1 || b1 > a1);
 console.log(d1 > b1 && b1 > a1);
+
+// Практическое занятие 5.1
+
+let randomNum = Math.floor((Math.random()) * 5);
+let correct = false;
+
+let usrGuess = -1;
+
+while (correct == false){
+    usrGuess = prompt(`Введи число`)
+    if (usrGuess != randomNum) {
+        continue;
+    }
+    else if (usrGuess == randomNum) {
+        console.log(`Вы ввели ${usrGuess}. Число ${randomNum}`);
+        alert(`Вы ввели ${usrGuess}. Число ${randomNum}`);
+        correct = true;
+    }
+}
+
