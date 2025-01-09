@@ -561,3 +561,38 @@ for (i of emptyArray) {
     console.log(i);
 }
 
+// Цикл for in
+
+let car = {
+    model: "Golf",
+    make: "VAG",
+    year: 1999,
+    color: "black",
+}
+
+for (let prop in car) {
+    console.log(car[prop]);
+}
+
+for (let prop in car) {
+    console.log(prop);
+}
+
+// НА ЗАМЕТКУ
+// Цикл for in - получает имена свойств (ключи), но не значения.
+// Цикл for of - проучаеи значения свойств, но не ключи.
+
+// Практическое занятие 5.7
+let city = {
+    naming: "Moscow",
+    year: 1200,
+    state: "Russia",
+}
+
+for (value in city) {
+    console.log(city[value]);
+}
+
+for (key in city) {
+    console.log(key);
+}
