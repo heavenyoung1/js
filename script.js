@@ -601,3 +601,7 @@ for (key in city) {
 
 let arrKeys = Object.keys(car)
 console.log(arrKeys);
+
+for (let key of Object.values(car)) {
+    console.log(key)
+}
