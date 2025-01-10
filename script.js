@@ -596,3 +596,8 @@ for (value in city) {
 for (key in city) {
     console.log(key);
 }
+
+// Цикл из объектов, преобразованных в массивы
+
+let arrKeys = Object.keys(car)
+console.log(arrKeys);
