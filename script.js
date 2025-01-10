@@ -611,7 +611,9 @@ for (let i = 0; i < arrKeys.length; i++) {
     console.log(arrKeys[i] + ": " + car[arrKeys[i]]);
 }
 
-
-
 let  arrEntires = Object.entries(car);
 console.log(arrEntires);
+
+for (const [key, value] of Object.entries(car)) {
+    console.log(key, ": ", value);
+}
