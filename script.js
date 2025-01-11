@@ -658,3 +658,14 @@ function concatNum(x, y) {
 }
 
 concatNum(100, 100);
+
+// Практическое занятие 6.2
+
+function getDesc() {
+    namePerson = prompt("Чел, введи имя!")
+    nameArray = ["Тупой", "Умный", "славный", "Чумной", "Дурацкий"]
+    let indexName = Math.floor(Math.random() * 5);
+    console.log(`Ты - ${nameArray[indexName]}, индекс - ${indexName}`);
+}
+
+getDesc();
