@@ -631,3 +631,22 @@ for (let i = 0; i < 10; i++) {
     }
     console.log(i);
 }
+
+// Использование меток (labels)
+
+let groups = [
+    ["Martin", "Maria", "Alisa"],
+    ["Anfisa", "Larisa", "Margot"],
+    ["Jason", "Donald", "Barbara"]
+]
+
+outer:
+for (let group of groups) {
+    inner:
+    for (let member of group) {
+        if (member.startsWith("M")) {
+            console.log(`Найден один человек с буквы М: ${member}`);
+            break outer;
+        }
+    }
+}
