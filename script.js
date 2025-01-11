@@ -651,3 +651,10 @@ for (let group of groups) {
     }
 }
 
+// Практическое занятие 6.1
+
+function concatNum(x, y) {
+    console.log(x + y);
+}
+
+concatNum(100, 100);

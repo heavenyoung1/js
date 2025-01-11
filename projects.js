@@ -135,14 +135,14 @@
 
 // Проект - Математическая таблица умножения
 
-let multiplyArray = [];
-const value = 10; // Количество перемножаемых переменных
-for (let i = 0; i < value; i++) {
-    let temp = [];
-    for (let j = 0; j < value; j++) {
-        temp.push(i * j);
-    }
-    multiplyArray.push(temp);
-}
+// let multiplyArray = [];
+// const value = 10; // Количество перемножаемых переменных
+// for (let i = 0; i < value; i++) {
+//     let temp = [];
+//     for (let j = 0; j < value; j++) {
+//         temp.push(i * j);
+//     }
+//     multiplyArray.push(temp);
+// }
 
-console.table(multiplyArray);
+// console.table(multiplyArray);
