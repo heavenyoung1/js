@@ -105,30 +105,44 @@
 // Ножницы < Камень and Ножницы > Бумага
 // Бумага > Камень and Бумага > 
 
-let elements = ["Бумага", "Ножницы", "Камень"];
-let selPC = Math.floor(Math.random() * 3);
-let mySelect = Math.floor(Math.random() * 3);
+// let elements = ["Бумага", "Ножницы", "Камень"];
+// let selPC = Math.floor(Math.random() * 3);
+// let mySelect = Math.floor(Math.random() * 3);
 
-if (selPC != mySelect) {
-    if (selPC == 0 && mySelect == 1) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+// if (selPC != mySelect) {
+//     if (selPC == 0 && mySelect == 1) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+//     }
+//     if (selPC == 0 && mySelect == 2) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+//     }
+//     if (selPC == 1 && mySelect == 0) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+//     }
+//     if (selPC == 1 && mySelect == 2) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+//     }
+//     if (selPC == 2 && mySelect == 0) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
+//     }
+//     if (selPC == 2 && mySelect == 1) {
+//         console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
+//     }
+// }
+// else {
+//     console.log("Ничья.")
+// }
+
+// Проект - Математическая таблица умножения
+
+let multiplyArray = [];
+const value = 10; // Количество перемножаемых переменных
+for (let i = 0; i < value; i++) {
+    let temp = [];
+    for (let j = 0; j < value; j++) {
+        temp.push(i * j);
     }
-    if (selPC == 0 && mySelect == 2) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
-    }
-    if (selPC == 1 && mySelect == 0) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
-    }
-    if (selPC == 1 && mySelect == 2) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
-    }
-    if (selPC == 2 && mySelect == 0) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы выиграли`)
-    }
-    if (selPC == 2 && mySelect == 1) {
-        console.log(`Ваш выбор ${elements[mySelect]}. Выбор компьютера ${elements[selPC]}. Вы проиграли`)
-    }
+    multiplyArray.push(temp);
 }
-else {
-    console.log("Ничья.")
-}
+
+console.table(multiplyArray);
