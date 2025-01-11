@@ -661,11 +661,32 @@ concatNum(100, 100);
 
 // Практическое занятие 6.2
 
-function getDesc() {
-    namePerson = prompt("Чел, введи имя!")
-    nameArray = ["Тупой", "Умный", "славный", "Чумной", "Дурацкий"]
-    let indexName = Math.floor(Math.random() * 5);
-    console.log(`Ты - ${nameArray[indexName]}, индекс - ${indexName}`);
+// function getDesc() {
+//     namePerson = prompt("Чел, введи имя!")
+//     nameArray = ["Тупой", "Умный", "славный", "Чумной", "Дурацкий"]
+//     let indexName = Math.floor(Math.random() * 5);
+//     console.log(`Ты - ${nameArray[indexName]}, индекс - ${indexName}`);
+// }
+
+// getDesc();
+
+// Практическое занятие 6.3
+
+
+function nameFunction(x, y, operator) {
+    switch (operator) {
+        case 0:
+            console.log(x + y);
+            break;
+        case 1:
+            console.log(x - y);
+            break;
+        case 2:
+            console.log(x * y);
+            break;
+        default:
+            console.log(x + y);
+    }
 }
 
-getDesc();
+nameFunction(3, 3);
