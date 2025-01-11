@@ -502,9 +502,9 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 
-for (i = 0; i < myWork.length; i++) {
-    console.log(myWork[i]);
-}
+// for (i = 0; i < myWork.length; i++) {
+//     console.log(myWork[i]);
+// }
 
 // Практическое занятие 5.4
 
@@ -617,3 +617,18 @@ console.log(arrEntires);
 for (const [key, value] of Object.entries(car)) {
     console.log(key, ": ", value);
 }
+
+// Практическое занятие 5.8
+
+// Цикл с Continue (Пропуск Переменной)
+let messageOutput = String();
+let numberPass = 4;
+
+
+for (let i = 0; i < 10; i++) {
+    if (i == numberPass) {
+        continue;
+    }
+    console.log(i);
+}
+
