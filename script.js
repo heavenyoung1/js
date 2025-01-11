@@ -710,3 +710,5 @@ doingArrowStuff("Hello World!");
 
 let addTwoNumbersArrow = (x, y) => console.log(x + y);
 addTwoNumbersArrow(3, 100);
+
+arrOfShapes.forEach(e => console.log(e));
