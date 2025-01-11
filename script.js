@@ -620,15 +620,14 @@ for (const [key, value] of Object.entries(car)) {
 
 // Практическое занятие 5.8
 
-// Цикл с Continue (Пропуск Переменной)
+// Цикл с break (остановка цикла)
 let messageOutput = String();
 let numberPass = 4;
 
 
 for (let i = 0; i < 10; i++) {
     if (i == numberPass) {
-        continue;
+        break;
     }
     console.log(i);
 }
-
