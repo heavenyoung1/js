@@ -690,3 +690,11 @@ function nameFunction(x, y, operator) {
 }
 
 nameFunction(3, 3);
+
+// Функции с параметрами по умолчанию 
+ 
+function addTwoNumbers(x = 2, y = 3) {
+    console.log(x + y);
+}
+
+addTwoNumbers();
