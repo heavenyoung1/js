@@ -698,3 +698,15 @@ function addTwoNumbers(x = 2, y = 3) {
 }
 
 addTwoNumbers();
+
+// Стрелочные функции
+
+function doingStuff(x) {
+    console.log(x);
+}
+
+let doingArrowStuff = x => console.log(x);
+doingArrowStuff("Hello World!");
+
+let addTwoNumbersArrow = (x, y) => console.log(x + y);
+addTwoNumbersArrow(3, 100);
