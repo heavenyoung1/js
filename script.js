@@ -712,3 +712,9 @@ let addTwoNumbersArrow = (x, y) => console.log(x + y);
 addTwoNumbersArrow(3, 100);
 
 arrOfShapes.forEach(e => console.log(e));
+
+// Оператор spread
+
+let spread = ["so", "much", "fun"];
+let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
+console.log(message);
