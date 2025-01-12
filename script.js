@@ -718,3 +718,10 @@ arrOfShapes.forEach(e => console.log(e));
 let spread = ["so", "much", "fun"];
 let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
 console.log(message);
+
+function addTwoNumbersFirst(x, y) {
+    console.log(x + y);
+}
+
+let arr1 = [5, 9];
+addTwoNumbersFirst(...arr1);
