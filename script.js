@@ -725,3 +725,11 @@ function addTwoNumbersFirst(x, y) {
 
 let arr1 = [5, 9];
 addTwoNumbersFirst(...arr1);
+
+// Параметр rest
+
+function someFunction(param1, ...param2) {
+    console.log(param1, param2);
+}
+
+someFunction("Hi", "there", "How are you?");
