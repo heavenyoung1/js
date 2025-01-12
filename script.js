@@ -733,3 +733,13 @@ function someFunction(param1, ...param2) {
 }
 
 someFunction("Hi", "there", "How are you?");
+
+// Возврат значений функций
+
+function addTwoNumbersReturn(x, y) {
+    return x + y;
+}
+
+console.log(addTwoNumbersReturn(4, 5));
+let result = addTwoNumbersReturn(18, 44);
+console.log(result);
