@@ -743,3 +743,22 @@ function addTwoNumbersReturn(x, y) {
 console.log(addTwoNumbersReturn(4, 5));
 let result = addTwoNumbersReturn(18, 44);
 console.log(result);
+
+// Практическое занятие 6.4
+
+let arrToAdd = [];
+let xFromLoop = 0;
+let yFromLoop = 0;
+
+function someFunctionToMultiply(x, y) {
+    return (x + y);
+}
+
+for (let i = 0; i < 10; i++) {
+    xFromLoop = i * 5;
+    yFromLoop = i * i;
+    someFunctionToMultiply(xFromLoop, yFromLoop);
+    arrToAdd.push(someFunctionToMultiply(xFromLoop, yFromLoop));
+}
+
+console.log(arrToAdd);
