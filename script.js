@@ -768,3 +768,12 @@ console.log(arrToAdd);
 let addTwoNumberss = (x, y) => x + y;
 let result6 = addTwoNumberss(12, 15);
 console.log(result6);
+
+// Область видимости переменных в функциях
+
+function testAvilability (xx) {
+    console.log(`Avaliable Here: ${xx}`);
+}
+
+testAvilability("Hi");
+console.log(`Not avaliable here: ${xx}`);
