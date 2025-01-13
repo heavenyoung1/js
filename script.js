@@ -789,11 +789,20 @@ function doingStuff1() {
 
 doingStuff1();
 
-function doingStuff2() {
+// function doingStuff2() {
+//     if (true) {
+//         let yyy = "local";
+//     }
+//     console.log(yyy);
+// }
+
+// doingStuff2();
+
+function doingStuff3() {
     if (true) {
-        let yyy = "local";
+        console.log(x);
+        var x = "local";
     }
-    console.log(yyy);
 }
 
-doingStuff2();
+doingStuff3();
