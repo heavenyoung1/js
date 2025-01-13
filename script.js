@@ -762,3 +762,9 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(arrToAdd);
+
+// Возврат результата с помощью стрелочных функций
+
+let addTwoNumberss = (x, y) => x + y;
+let result6 = addTwoNumberss(12, 15);
+console.log(result6);
