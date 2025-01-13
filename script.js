@@ -775,5 +775,25 @@ function testAvilability (xx) {
     console.log(`Avaliable Here: ${xx}`);
 }
 
-testAvilability("Hi");
-console.log(`Not avaliable here: ${xx}`);
+// testAvilability("Hi");
+// console.log(`Not avaliable here: ${xx}`);
+
+// Сравнение переменных let и var
+
+function doingStuff1() {
+    if (true) {
+        var xxx = "local";
+    }
+    console.log(xxx);
+}
+
+doingStuff1();
+
+function doingStuff2() {
+    if (true) {
+        let yyy = "local";
+    }
+    console.log(yyy);
+}
+
+doingStuff2();
