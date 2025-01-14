@@ -806,3 +806,14 @@ function doingStuff3() {
 }
 
 doingStuff3();
+
+// Область видимость константы такая же как и оператора let
+
+function doingStuff4() {
+    if (true) {
+        const X = "local";
+    }
+    console.log(X);
+}
+
+doingStuff4();
