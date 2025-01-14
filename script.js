@@ -854,3 +854,12 @@ let resultIIFE1 = (function(varing) {
     let variableForIIFE = varing
     console.log(`${variableForIIFE}, я вообще правильно понял задание??`)
 }) ("Donald Trump");
+
+// Рекурсивная функция
+
+function getRecursive(nr) {
+    console.log(nr);
+    getRecursive(--nr);
+}
+
+getRecursive(3);
