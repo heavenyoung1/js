@@ -824,3 +824,7 @@ doingStuff3();
 (function () {
     console.log("IIFE!");
 })();
+
+(() => {
+    console.log("IIFE Invoked in Arrow");
+})();
