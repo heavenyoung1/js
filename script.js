@@ -828,3 +828,29 @@ doingStuff3();
 (() => {
     console.log("IIFE Invoked in Arrow");
 })();
+
+let iifeX = (function () {
+    console.log("IIFE!");
+})();
+
+console.log(`This variable - ${iifeX}`);
+// Оно к слову не работает
+
+// Практическое занятие 6.5
+
+let variableForIIFE = 1000;
+
+(function() {
+    let variableForIIFE = 2000;
+    console.log(variableForIIFE);
+}) ();
+
+let resultIIFE = (function() {
+    let variableForIIFE = 3000;
+    console.log(variableForIIFE);
+}) ();
+
+let resultIIFE1 = (function(varing) {
+    let variableForIIFE = varing
+    console.log(`${variableForIIFE}, я вообще правильно понял задание??`)
+}) ("Donald Trump");
