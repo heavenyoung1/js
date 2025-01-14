@@ -809,11 +809,18 @@ doingStuff3();
 
 // Область видимость константы такая же как и оператора let
 
-function doingStuff4() {
-    if (true) {
-        const X = "local";
-    }
-    console.log(X);
-}
+// function doingStuff4() {
+//     if (true) {
+//         const X = "local";
+//     }
+//     console.log(X);
+// }
 
-doingStuff4();
+// doingStuff4();
+
+// IIFE - Immidiately Inviked Function Expression 
+// По типу лямбла функций в питоне?
+
+(function () {
+    console.log("IIFE!");
+})();
