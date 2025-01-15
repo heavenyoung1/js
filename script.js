@@ -874,3 +874,26 @@ function getRecursive(nr) {
 }
 
 getRecursive(3);
+
+
+console.log("СМОТРИ СЮДА!")
+// Практическое занятие 6.6 - Взятие факториала
+
+function DoFactorial(amount) {
+    let resultArray = [];
+    let result = 0;
+    if (amount === 0) {
+        console.log(1);
+    }
+    else if (amount < 0) {
+        console.log("Введите число > 0")
+    }
+    else {
+        DoFactorial(--amount)
+        resultArray.push(amount);
+        console.log(amount);
+    }
+    return(resultArray);
+}
+
+console.log(DoFactorial(5));
