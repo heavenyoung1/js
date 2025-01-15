@@ -880,20 +880,12 @@ console.log("СМОТРИ СЮДА!")
 // Практическое занятие 6.6 - Взятие факториала
 
 function DoFactorial(amount) {
-    let resultArray = [];
-    let result = 0;
-    if (amount === 0) {
-        console.log(1);
+    if (amount == 0 || amount == 1) {
+        return 1;
+    } else {
+        return amount * DoFactorial(amount - 1);
     }
-    else if (amount < 0) {
-        console.log("Введите число > 0")
-    }
-    else {
-        DoFactorial(--amount)
-        resultArray.push(amount);
-        console.log(amount);
-    }
-    return(resultArray);
+
 }
 
-console.log(DoFactorial(5));
+console.log(DoFactorial(4));
