@@ -857,9 +857,20 @@ let resultIIFE1 = (function(varing) {
 
 // Рекурсивная функция
 
+// function getRecursive(nr) {
+//     console.log(nr);
+//     getRecursive(--nr);
+// }
+
+// getRecursive(3);
+
+// Рекурсивная функция корректная
+
 function getRecursive(nr) {
     console.log(nr);
-    getRecursive(--nr);
+    if (nr > 0) {
+        getRecursive(--nr);
+    }
 }
 
 getRecursive(3);
