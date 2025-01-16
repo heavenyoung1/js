@@ -903,6 +903,18 @@ console.log(DoFactorial(4));
 
 // Функция с ошибкой
 
+// function DoOuterFunctionStuff(nr) {
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x) {
+//         let z = 10;
+//     }
+//     console.log(`Недоступная переменная ${z}`); 
+// }
+
+//Переменная определенная во внутренней фукнции не может быть доступна во внешней
+
+// DoOuterFunctionStuff(3);
+
 function DoOuterFunctionStuff(nr) {
     doInnerFunctionStuff(nr);
     function doInnerFunctionStuff(x) {
@@ -911,6 +923,4 @@ function DoOuterFunctionStuff(nr) {
     console.log(`Недоступная переменная ${z}`); 
 }
 
-//Переменная определенная во внутренней фукнции не может быть доступна во внешней
-
-DoOuterFunctionStuff(3);
+doInnerFunctionStuff(3);
