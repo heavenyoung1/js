@@ -875,17 +875,28 @@ function getRecursive(nr) {
 
 getRecursive(3);
 
+console.log("--------------------------")
 
-console.log("СМОТРИ СЮДА!")
 // Практическое занятие 6.6 - Взятие факториала
 
 function DoFactorial(amount) {
     if (amount == 0 || amount == 1) {
         return 1;
-    } else {
-        return amount * DoFactorial(amount - 1);
     }
-
+    return amount * DoFactorial(amount - 1);
 }
 
 console.log(DoFactorial(4));
+
+// Вложенные функции
+
+function DoOuterFunctionStuff(nr) {
+    console.log("Outher Function");
+    doInnerFunctionStuff(nr);
+    function doInnerFunctionStuff(x) {
+        console.log(x + 7);
+        console.log("I can access outer variables:", nr);
+    }
+}
+
+DoOuterFunctionStuff(3);
