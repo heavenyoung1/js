@@ -890,13 +890,27 @@ console.log(DoFactorial(4));
 
 // Вложенные функции
 
+// function DoOuterFunctionStuff(nr) {
+//     console.log("Outher Function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x) {
+//         console.log(x + 7);
+//         console.log("I can access outer variables:", nr);
+//     }
+// }
+
+// DoOuterFunctionStuff(3);
+
+// Функция с ошибкой
+
 function DoOuterFunctionStuff(nr) {
-    console.log("Outher Function");
     doInnerFunctionStuff(nr);
     function doInnerFunctionStuff(x) {
-        console.log(x + 7);
-        console.log("I can access outer variables:", nr);
+        let z = 10;
     }
+    console.log(`Недоступная переменная ${z}`); 
 }
+
+//Переменная определенная во внутренней фукнции не может быть доступна во внешней
 
 DoOuterFunctionStuff(3);
