@@ -985,3 +985,9 @@ let anotherFunctionVariable = function() {
 }
 
 doFlexibleStuff(anotherFunctionVariable);
+
+let youGotThis = function() {
+    console.log("lorem Ipsum");
+}
+
+setTimeout(youGotThis, 1000);
