@@ -961,3 +961,11 @@ let functionVariable = function () {
 
 functionVariable();
 console.log(functionVariable());
+
+// Практическое занятие 6.8
+
+let testVariableAnonymous = function(testVar) {
+    return testVar;
+}
+
+console.log(testVariableAnonymous("LOL"));
