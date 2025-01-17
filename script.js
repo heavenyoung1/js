@@ -915,12 +915,35 @@ console.log(DoFactorial(4));
 
 // DoOuterFunctionStuff(3);
 
-function DoOuterFunctionStuff(nr) {
-    doInnerFunctionStuff(nr);
-    function doInnerFunctionStuff(x) {
-        let z = 10;
+// function DoOuterFunctionStuff(nr) {
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x) {
+//         let z = 10;
+//     }
+//     console.log(`Недоступная переменная ${z}`); 
+// }
+
+// doInnerFunctionStuff(3);
+console.log("--------------------------")
+// Практическое занятие 6.7
+
+let start = 10;
+
+function loop1(val) {
+    console.log(val);
+    if (val < 1) {
+        return loop1(val);
     }
-    console.log(`Недоступная переменная ${z}`); 
+    return loop1(val--);
+    }
+    loop1(start);
+    function loop2(val) {
+        console.log(val);
+        if (val > 0) {
+            val--;
+            return loop2(val);
+        }
+    return;
 }
 
-doInnerFunctionStuff(3);
+loop2(start);
