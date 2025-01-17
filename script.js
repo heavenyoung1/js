@@ -248,27 +248,27 @@ let someArr = [someArr0, someArr0, someArr0];
 console.log(someArr[1][1]);
 
 // Объекты, кажется очень сильно напоминают словари в python
-let dog = {
-    dogName: "JavaScript",
-    weight: 2.4,
-    color: "brown",
-    breed: "Chihuahua",
-    age: 3,
-}
+// let dog = {
+//     dogName: "JavaScript",
+//     weight: 2.4,
+//     color: "brown",
+//     breed: "Chihuahua",
+//     age: 3,
+// }
 
-let dogColor = dog["color"];
-let dogName = dog.dogName;
-console.log(dogName, dogColor);
+// let dogColor = dog["color"];
+// let dogName = dog.dogName;
+// console.log(dogName, dogColor);
 
-dog["color"] = "blue";
-dog.age = 100;
-console.log(dog);
-dog.age = "one hundred";
-console.log(dog);
+// dog["color"] = "blue";
+// dog.age = 100;
+// console.log(dog);
+// dog.age = "one hundred";
+// console.log(dog);
 
-let variableAgeOfDogs = "age";
-console.log(dog[variableAgeOfDogs]);
-console.log(dog["breed"]);
+// let variableAgeOfDogs = "age";
+// console.log(dog[variableAgeOfDogs]);
+// console.log(dog["breed"]);
 
 // Практическое занятие 3.4
 let myCar = {
@@ -993,4 +993,15 @@ let youGotThis = function() {
 setTimeout(youGotThis, 1000);
 
 //setInterval(youGotThis, 1000);
+
+// Глава 7. Классы
+
+function Dog(dogName, weight, color, breed) {
+    this.dogName = dogName;
+    this.weight = weight,
+    this.color = color;
+    this.breed = breed;
+}
+
+let dog = new Dog("Jacky", 30, "brown", "labrador");
 
