@@ -979,3 +979,9 @@ function doFlexibleStuff(executeStuff) {
 
 doFlexibleStuff(functionVariable);
 console.log(doFlexibleStuff(functionVariable)); // Вызов выдаёт undefined в консоли
+
+let anotherFunctionVariable = function() {
+    console.log("еще одна реализация анонимной функции");
+}
+
+doFlexibleStuff(anotherFunctionVariable);
