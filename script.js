@@ -986,22 +986,25 @@ let anotherFunctionVariable = function() {
 
 doFlexibleStuff(anotherFunctionVariable);
 
-let youGotThis = function() {
-    console.log("lorem Ipsum");
-}
+// let youGotThis = function() {
+//     console.log("lorem Ipsum");
+// }
 
-setTimeout(youGotThis, 1000);
+// setTimeout(youGotThis, 1000);
 
 //setInterval(youGotThis, 1000);
 
 // Глава 7. Классы
 
-function Dog(dogName, weight, color, breed) {
+class Dog {
+    constructor (dogName, weight, color, breed) {
     this.dogName = dogName;
     this.weight = weight,
     this.color = color;
     this.breed = breed;
 }
+}
 
 let dog = new Dog("Jacky", 30, "brown", "labrador");
 
+console.log(dog);
