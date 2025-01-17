@@ -147,12 +147,31 @@
 
 // console.table(multiplyArray);
 
-function recursiveCounter(n) {
-    const maxN = 10;
-    console.log(n);
-    if (n < maxN) {
-        recursiveCounter(n + 1)
-    }
+// function recursiveCounter(n) {
+//     const maxN = 10;
+//     console.log(n);
+//     if (n < maxN) {
+//         recursiveCounter(n + 1)
+//     }
+// }
+
+// recursiveCounter(0);
+
+// Использование функции setTimeOut();
+
+const arrowOne = () =>  console.log("one");
+const arrowTwo = () =>  console.log("two");
+
+const arrowThree = () => {
+    console.log("three");
+    arrowOne();
+    arrowTwo();
 }
 
-recursiveCounter(0);
+const arrowFour = () =>  {
+    console.log("four");
+    setTimeout(arrowOne);
+    setTimeout(arrowThree());
+}
+
+arrowFour();
