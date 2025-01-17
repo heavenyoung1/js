@@ -927,23 +927,37 @@ console.log(DoFactorial(4));
 console.log("--------------------------")
 // Практическое занятие 6.7
 
-let start = 10;
+// let start = 10;
 
-function loop1(val) {
-    console.log(val);
-    if (val < 1) {
-        return;
-    }
-    return loop1(val--);
-    }
-    loop1(start);
-    function loop2(val) {
-        console.log(val);
-        if (val > 0) {
-            val--;
-            return loop2(val);
-        }
-    return;
+// function loop1(val) {
+//     console.log(val);
+//     if (val < 1) {
+//         return loop1(val);
+//     }
+//     return loop1(val--);
+//     }
+//     loop1(start);
+//     function loop2(val) {
+//         console.log(val);
+//         if (val > 0) {
+//             val--;
+//             return loop2(val);
+//         }
+//     return;
+// }
+
+// loop2(start);
+
+// Анонимные функции
+
+function doingStuffAnonimously() {
+    console.log("Но не так уж и секретно");
 }
 
-loop2(start);
+let functionVariable = function () {
+    console.log("Но не так уж и секретно");
+    return `Вызываю анонимную функцию`;
+}
+
+functionVariable();
+console.log(functionVariable());
