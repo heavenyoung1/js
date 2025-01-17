@@ -1010,10 +1010,10 @@ let dog = new Dog("Jacky", 30, "brown", "labrador");
 console.log(dog);
 
 class Person {
-    constructor (firstName, lasName) {
+    constructor (firstName, lasName = "Musk") {
         this.firstName;
         this.lasName = lasName;
     }
 }
-let personOne = new Person("Elon", "Musk");
-console.log(personOne.lasName);
+let personOne = new Person("Elon");
+console.log(personOne.firstName, personOne.lasName);
