@@ -969,3 +969,13 @@ let testVariableAnonymous = function(testVar) {
 }
 
 console.log(testVariableAnonymous("LOL"));
+
+// Функции обратного вызова
+
+function doFlexibleStuff(executeStuff) {
+    executeStuff();
+    console.log("Inside doFlexibleStuff function")
+}
+
+doFlexibleStuff(functionVariable);
+console.log(doFlexibleStuff(functionVariable)); // Вызов выдаёт undefined в консоли
