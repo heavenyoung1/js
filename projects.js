@@ -146,3 +146,13 @@
 // }
 
 // console.table(multiplyArray);
+
+function recursiveCounter(n) {
+    const maxN = 10;
+    console.log(n);
+    if (n < maxN) {
+        recursiveCounter(n + 1)
+    }
+}
+
+recursiveCounter(0);
