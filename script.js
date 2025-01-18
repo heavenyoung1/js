@@ -1010,20 +1010,41 @@ let dog = new Dog("Jacky", 30, "brown", "labrador");
 console.log(dog);
 
 class Person {
-    #firstname;
-    #lastname;
+    #firstName;
+    #lastName;
     constructor (firstName, lastName) {
         this.#firstName = firstName;
         this.#lastName = lastName;
     }
 
+    get firstName() {
+        return this.#firstName;
+    }
+
+    set firstName(firstName) {
+        this.#firstName = firstName;
+    }
+
+    get lastname() {
+        return this.#lastName;
+}
+
+    set lastname(lastname) {
+        this.#lastName = lastName;
+    }
+
     getFullName() {
-        console.log(`It's ${this.#firstName} ${this.#lastName}`);
+        console.log(`It's ${this.firstName} ${this.lastName}`);
     }
 }
 
 p1 = new Person("Elon", "Musk");
 p1.getFullName();
+
+
+// Проверка работы сеттеров
+let p2 = new Person("Jeff", "Bezos");
+p2.getFullName(); // It's Jeff Bezos
 
 
 
