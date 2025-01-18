@@ -1010,22 +1010,21 @@ let dog = new Dog("Jacky", 30, "brown", "labrador");
 console.log(dog);
 
 class Person {
+    #firstname;
+    #lastname;
     constructor (firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.#firstName = firstName;
+        this.#lastName = lastName;
     }
 
     getFullName() {
-        console.log(`It's ${this.firstName} ${this.lastName}`);
+        console.log(`It's ${this.#firstName} ${this.#lastName}`);
     }
 }
 
-// Практическое занятие 7.1 по сути выполнено выше
-
-// Практическое занятие 7.2
-
 p1 = new Person("Elon", "Musk");
 p1.getFullName();
+
 
 
 
