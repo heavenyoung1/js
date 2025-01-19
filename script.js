@@ -1117,5 +1117,3 @@ const leon = new Animal("Leon", "M", "South Africa", "rrr-rrr");
 leon.makeASound();
 leon.catchThePrey("zebra");
 
-
-

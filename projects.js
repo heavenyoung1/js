@@ -159,19 +159,32 @@
 
 // Использование функции setTimeOut();
 
-const arrowOne = () =>  console.log("one");
-const arrowTwo = () =>  console.log("two");
+// const arrowOne = () =>  console.log("one");
+// const arrowTwo = () =>  console.log("two");
 
-const arrowThree = () => {
-    console.log("three");
-    arrowOne();
-    arrowTwo();
+// const arrowThree = () => {
+//     console.log("three");
+//     arrowOne();
+//     arrowTwo();
+// }
+
+// const arrowFour = () =>  {
+//     console.log("four");
+//     setTimeout(arrowOne);
+//     setTimeout(arrowThree());
+// }
+
+// arrowFour();
+
+// Приложение для контроля сотрудников
+
+class Employee {
+    constructor (firstName, lastName, yearsAmount) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.yearsAmount = yearsAmount;
+    }
 }
 
-const arrowFour = () =>  {
-    console.log("four");
-    setTimeout(arrowOne);
-    setTimeout(arrowThree());
-}
 
-arrowFour();
+
