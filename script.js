@@ -1091,6 +1091,21 @@ Person.prototype.introduce = function() {
 
 Person.prototype.walk = function() {
     console.log(`${this.name} is walking.`);
+}
 
+console.log("--------------")
 
+// Практическое занятие 3.7
+
+class Animal {
+    constructor(type, sex, location, voice) {
+        this.type = type;
+        this.sex = sex;
+        this.location = location;
+        this.voice = voice;
+    }
+    makeASound() {
+        console.log(`${this.type} makes a sound ${this.voice}`)
+    }
+}
 
