@@ -199,15 +199,15 @@
 // Расчёт стоимости заказов
 
 class Menu {
-    #offer1;
-    #offer2;
+    #offer1 = 10;
+    #offer2 = 20;
     constructor (amount1, amount2) {
         this.amount1 = amount1;
         this.amount2 = amount2;
     }
 
     callTotal() {
-        console.log(this.amount1 * this.#offer1 + this.amount2 * this.#offer2);
+        return(this.amount1 * this.#offer1 + this.amount2 * this.#offer2);
     }
 
     get totalValueOffer() {
@@ -222,3 +222,4 @@ const val3 = new Menu(3,2);
 console.log(val1.totalValueOffer);
 console.log(val2.totalValueOffer);
 console.log(val3.totalValueOffer);
+
