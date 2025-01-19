@@ -1064,6 +1064,16 @@ class Vehicle {
     }
 }
 
+class Motorcycle extends Vehicle {
+    constructor (color, currentSpeed, maxSpeed, fuel) {
+        super(color, currentSpeed, maxSpeed);
+        this.fuel;
+    }
+
+    doWheelie() {
+        console.log("Едет на колесе!");
+    }
+}
 
 
 
