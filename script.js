@@ -1109,3 +1109,9 @@ class Animal {
     }
 }
 
+Animal.prototype.catchThePrey = function(cathedAnimal) {
+    console.log(`${this.type} catch ${cathedAnimal}`);
+};
+
+
+
