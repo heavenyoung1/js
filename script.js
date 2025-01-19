@@ -1075,6 +1075,12 @@ class Motorcycle extends Vehicle {
     }
 }
 
+let motor = new Motorcycle("Black", 0, 250, "бензин");
+console.log(motor.color);
+motor.accelerate(50);
+console.log(motor.currentSpeed);
+motor.move();
+
 
 
 
