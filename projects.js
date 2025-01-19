@@ -186,5 +186,14 @@ class Employee {
     }
 }
 
+Employee.prototype.getFullInfo = function() {
+    console.log(`Employee ${this.firstName} ${this.lastName}, working here ${this.yearsAmount} years.`)
+}
+
+people1 = new Employee("Donald", "Trump", 6);
+people2 = new Employee("Joe", "Biden", 8);
+
+people1.getFullInfo();
+people2.getFullInfo();
 
 
