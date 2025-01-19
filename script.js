@@ -1046,6 +1046,25 @@ p1.getFullName();
 let p2 = new Person("Jeff", "Bezos");
 p2.getFullName(); // It's Jeff Bezos
 
+// Наследование 
+
+class Vehicle {
+    constructor (color, currentSpeed, maxSpeed) {
+        this.color = color;
+        this.currentSpeed = currentSpeed;
+        this.maxSpeed = maxSpeed;
+    }
+
+    move() {
+        console.log("Движется со скоростью", this.currentSpeed);
+    }
+
+    accelerate(amount) {
+        this.currentSpeed += amount;
+    }
+}
+
+
 
 
 
