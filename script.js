@@ -1113,5 +1113,9 @@ Animal.prototype.catchThePrey = function(cathedAnimal) {
     console.log(`${this.type} catch ${cathedAnimal}`);
 };
 
+const leon = new Animal("Leon", "M", "South Africa", "rrr-rrr");
+leon.makeASound();
+leon.catchThePrey("zebra");
+
 
 
