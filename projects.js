@@ -178,22 +178,47 @@
 
 // Приложение для контроля сотрудников
 
-class Employee {
-    constructor (firstName, lastName, yearsAmount) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.yearsAmount = yearsAmount;
+// class Employee {
+//     constructor (firstName, lastName, yearsAmount) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.yearsAmount = yearsAmount;
+//     }
+// }
+
+// Employee.prototype.getFullInfo = function() {
+//     console.log(`Employee ${this.firstName} ${this.lastName}, working here ${this.yearsAmount} years.`)
+// }
+
+// people1 = new Employee("Donald", "Trump", 6);
+// people2 = new Employee("Joe", "Biden", 8);
+
+// people1.getFullInfo();
+// people2.getFullInfo();
+
+// Расчёт стоимости заказов
+
+class Menu {
+    #offer1;
+    #offer2;
+    constructor (amount1, amount2) {
+        this.amount1 = amount1;
+        this.amount2 = amount2;
+    }
+
+    callTotal() {
+        console.log(this.amount1 * this.#offer1 + this.amount2 * this.#offer2);
+    }
+
+    get totalValueOffer() {
+        return this.callTotal();
     }
 }
 
-Employee.prototype.getFullInfo = function() {
-    console.log(`Employee ${this.firstName} ${this.lastName}, working here ${this.yearsAmount} years.`)
-}
+const val1 = new Menu(2,0);
+const val2 = new Menu(1,3);
+const val3 = new Menu(3,2);
 
-people1 = new Employee("Donald", "Trump", 6);
-people2 = new Employee("Joe", "Biden", 8);
-
-people1.getFullInfo();
-people2.getFullInfo();
-
-
+console.log(val1.totalValueOffer);
+console.log(val2.totalValueOffer);
+console.log(val3.totalValueOffer);
