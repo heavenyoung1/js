@@ -1081,6 +1081,16 @@ motor.accelerate(50);
 console.log(motor.currentSpeed);
 motor.move();
 
+// Прототипы
+
+console.log(Person.prototype);
+
+Person.prototype.introduce = function() {
+    console.log(`Hi, I'm ${this.firstName}`);
+}
+
+Person.prototype.walk = function() {
+    console.log(`${this.name} is walking.`);
 
 
 
