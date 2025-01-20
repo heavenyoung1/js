@@ -223,3 +223,4 @@ console.log(val1.totalValueOffer);
 console.log(val2.totalValueOffer);
 console.log(val3.totalValueOffer);
 
+

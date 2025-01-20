@@ -1117,3 +1117,11 @@ const leon = new Animal("Leon", "M", "South Africa", "rrr-rrr");
 leon.makeASound();
 leon.catchThePrey("zebra");
 
+// Встроенные методы JavaScript
+
+let uri = "https://www.example.com/submit?name=maaike van putten";
+let encoded_uri = encodeURIComponent(uri);
+console.log(encoded_uri)
+
+// Практическое занятие 8.1
+
