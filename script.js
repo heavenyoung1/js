@@ -1125,3 +1125,17 @@ console.log(encoded_uri)
 
 // Практическое занятие 8.1
 
+let myEncodedUrl = "How's%20it%20going%3F";
+let myDecodedUrl = "How's it going?.";
+
+let toEncode = encodeURIComponent(myDecodedUrl);
+let toDecode = decodeURIComponent(myEncodedUrl);
+
+if (toDecode === toEncode) {
+    console.log(`Yes! ${toEncode}  ${toEncode}`);
+} else { 
+    console.log(`NO! ${toEncode}  ${toEncode}`);
+}
+
+
+
