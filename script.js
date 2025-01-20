@@ -1139,5 +1139,9 @@ if (toEncode == myEncodedUrl && toDecode == myDecodedUrl) {
     console.log(`NO! ${toEncode}  ${toEncode}`);
 }
 
+// Создание целых чисел с помощью parseInt()
 
+let str_int = "6";
+let int_int = parseInt(str_int);
+console.log(`Type of ${int_int} is ${ typeof int_int}`)
 
