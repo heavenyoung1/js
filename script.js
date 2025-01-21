@@ -1141,7 +1141,14 @@ if (toEncode == myEncodedUrl && toDecode == myDecodedUrl) {
 
 // Создание целых чисел с помощью parseInt()
 
-let str_int = "6";
+let str_int = "6";  
 let int_int = parseInt(str_int);
 console.log(`Type of ${int_int} is ${ typeof int_int}`)
+
+// Создание чисел с плавающей точкой с поомщью parseFloat()
+
+let str_float = "7.6";
+let float_float = parseFloat(str_float);
+console.log(`Type of ${float_float} is ${typeof float_float}`);
+
 
