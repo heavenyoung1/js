@@ -1147,7 +1147,7 @@ console.log(`Type of ${int_int} is ${ typeof int_int}`)
 
 // Создание чисел с плавающей точкой с поомщью parseFloat()
 
-let str_float = "7.6";
+let str_float = "7.6.1";
 let float_float = parseFloat(str_float);
 console.log(`Type of ${float_float} is ${typeof float_float}`);
 
