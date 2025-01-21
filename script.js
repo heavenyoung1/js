@@ -1151,4 +1151,8 @@ let str_float = "7.6.1";
 let float_float = parseFloat(str_float);
 console.log(`Type of ${float_float} is ${typeof float_float}`);
 
+function go(e) {
+    eval(e.eval);
+}
+
 
