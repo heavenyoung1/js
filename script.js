@@ -1151,8 +1151,11 @@ let str_float = "7.6.1";
 let float_float = parseFloat(str_float);
 console.log(`Type of ${float_float} is ${typeof float_float}`);
 
-function go(e) {
-    eval(e.eval);
-}
+// Работа с массивами
+
+let arr22 = ["grepefruite", 1, 2, 3, 4, 5, 6, 7, true, 5.6];
+console.log(arr22);
+arr22.copyWithin(0, 3, 4);
+console.log(arr22);
 
 
