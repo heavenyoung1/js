@@ -1172,10 +1172,10 @@ console.log(arr22.lastIndexOf(5.6));
 console.log(arr22.lastIndexOf(true));
 
 function CheckNumber(element, index) {
-    return typeof element === "string";
+    return typeof element === "number";
 }
 
-let filterArr = arr.filter(CheckNumber);
+let filterArr = arr22.filter(CheckNumber);
 console.log(filterArr);
 
 
@@ -1183,5 +1183,11 @@ console.log(filterArr);
 
 let arrFrom82 = ["Laurence", "Mike", "Larry", "Kim", "Joanne", "Laurence", "Mike", "Laurence", "Mike", "Laurence", "Mike"];
 let filteredArr82 = []
+
+function filteredName (element, index) {
+    return element === index;
+}
+
+console.log(arrFrom82.filter(filteredName));
 
 
