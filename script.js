@@ -1157,7 +1157,7 @@ console.log(`Type of ${float_float} is ${typeof float_float}`);
 // start (обязательный): Индекс начала копируемой последовательности. Если отрицательный, отсчитывается с конца массива.
 // end (необязательный): Индекс конца копируемой последовательности (не включая этот индекс). Если не указан, копирование идет до конца массива.
 
-let arr22 = ["grepefruite", 1, 2, 3, 4, 5, 6, 7, false, 5.6];
+let arr22 = ["grepefruite", 1, 2, 3, 4, 5, "lol", 6, 7, false, 5.6];
 console.log(arr22);
 arr22.copyWithin(0, 8, arr22.length);
 console.log(arr22);
@@ -1171,6 +1171,17 @@ console.log(mapped_arr);
 console.log(arr22.lastIndexOf(5.6));
 console.log(arr22.lastIndexOf(true));
 
+function CheckNumber(element, index) {
+    return typeof element === "string";
+}
 
+let filterArr = arr.filter(CheckNumber);
+console.log(filterArr);
+
+
+// Практическое занятие 8.2
+
+let arrFrom82 = ["Laurence", "Mike", "Larry", "Kim", "Joanne", "Laurence", "Mike", "Laurence", "Mike", "Laurence", "Mike"];
+let filteredArr82 = []
 
 
