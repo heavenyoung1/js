@@ -1167,6 +1167,9 @@ console.log(arr22);
 let mapped_arr = arr22.map(x => x + 1);
 console.log(mapped_arr);
 
+// lastIndexOf
+console.log(arr22.lastIndexOf(5.6));
+console.log(arr22.lastIndexOf(true));
 
 
 
