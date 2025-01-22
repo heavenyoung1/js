@@ -1157,10 +1157,16 @@ console.log(`Type of ${float_float} is ${typeof float_float}`);
 // start (обязательный): Индекс начала копируемой последовательности. Если отрицательный, отсчитывается с конца массива.
 // end (необязательный): Индекс конца копируемой последовательности (не включая этот индекс). Если не указан, копирование идет до конца массива.
 
-let arr22 = ["grepefruite", 1, 2, 3, 4, 5, 6, 7, true, 5.6];
+let arr22 = ["grepefruite", 1, 2, 3, 4, 5, 6, 7, false, 5.6];
 console.log(arr22);
 arr22.copyWithin(0, 8, arr22.length);
 console.log(arr22);
+
+
+// Метод map();
+let mapped_arr = arr22.map(x => x + 1);
+console.log(mapped_arr);
+
 
 
 
