@@ -1226,3 +1226,11 @@ console.log(pos);
 
 let notFound = searchStr.search("JS");
 console.log(notFound);
+
+// charAt. Нахождение символа по индексу
+let pos1 = poem.charAt(10);
+console.log(pos1);
+
+//Если элемента по индексу нет, возвращается пустая строка...
+let pos2 = poem.charAt(1000);
+console.log(typeof pos2);
