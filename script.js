@@ -1223,3 +1223,6 @@ console.log(index_re);
 let searchStr = "When I see my fellow, I say hello";
 let pos = searchStr.search("my");
 console.log(pos);
+
+let notFound = searchStr.search("JS");
+console.log(notFound);
