@@ -1212,3 +1212,10 @@ console.log(arr_result111);
 let letters = ["a", "b", "c", "d"];
 let arrToStr = letters.join("-");
 console.log(arrToStr);
+
+// Работа со свойствами index и position
+
+let poem = "Roses are red, violets are blue, 25,  if I can do JS, then you can too!";
+let index_re = poem.indexOf("Ro");
+console.log(index_re);
+// Данный метод учитывает Регистр элемента
