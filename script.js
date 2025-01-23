@@ -1219,3 +1219,7 @@ let poem = "Roses are red, violets are blue, 25,  if I can do JS, then you can t
 let index_re = poem.indexOf("Ro");
 console.log(index_re);
 // Данный метод учитывает Регистр элемента
+
+let searchStr = "When I see my fellow, I say hello";
+let pos = searchStr.search("my");
+console.log(pos);
