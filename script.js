@@ -1189,3 +1189,9 @@ let UniqueNames = names.filter((element, index, array) => {
 });
 
 console.log(UniqueNames);
+
+// Практическое занятие 8.2
+
+let myArrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let myArrayNumbers2 = myArrayNumbers.map(x => x * 2);
+console.log(myArrayNumbers2);
