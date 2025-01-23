@@ -1182,12 +1182,10 @@ console.log(filterArr);
 // Практическое занятие 8.2
 
 let arrFrom82 = ["Laurence", "Mike", "Larry", "Kim", "Joanne", "Laurence", "Mike", "Laurence", "Mike", "Laurence", "Mike"];
-let filteredArr82 = []
 
-function filteredName (element, index) {
-    return element === index;
-}
+let UniqueNames = names.filter((element, index, array) => {
+    console.log(`Checking: ${element}, Current Index: ${index}, First Index: ${array.indexOf(element)}`);
+    return array.indexOf(element) === index;
+});
 
-console.log(arrFrom82.filter(filteredName));
-
-
+console.log(UniqueNames);
