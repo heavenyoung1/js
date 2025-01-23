@@ -1200,7 +1200,11 @@ console.log(myArrayNumbers2);
 
 // Объединение строк
 
-let s1 = "Hello";
+let s1 = "Hello ";
 let s2 = "World";
 let result111 = s1.concat(s2);
 console.log(result111);
+
+// Преобразование строки в массив
+let arr_result111 = result111.split(" ");
+console.log(arr_result111);
