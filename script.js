@@ -1241,3 +1241,8 @@ let substr1 = poem.slice(5);
 let substr2 = poem.slice(0, 5);
 console.log(`This substr1:${substr1}`);
 console.log(`This substr2 ${substr2}`);
+
+// Замена строки
+let hi = "Hi buddy";
+let new_hi = hi.replace("buddy", "Pascal");
+console.log(new_hi);
