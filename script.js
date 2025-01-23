@@ -1208,3 +1208,7 @@ console.log(result111);
 // Преобразование строки в массив
 let arr_result111 = result111.split(" ");
 console.log(arr_result111);
+
+let letters = ["a", "b", "c", "d"];
+let arrToStr = letters.join("-");
+console.log(arrToStr);
