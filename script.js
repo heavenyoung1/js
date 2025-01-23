@@ -1195,3 +1195,12 @@ console.log(UniqueNames);
 let myArrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let myArrayNumbers2 = myArrayNumbers.map(x => x * 2);
 console.log(myArrayNumbers2);
+
+// Строчные методы
+
+// Объединение строк
+
+let s1 = "Hello";
+let s2 = "World";
+let result111 = s1.concat(s2);
+console.log(result111);
