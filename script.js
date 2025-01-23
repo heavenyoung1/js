@@ -1234,3 +1234,10 @@ console.log(pos1);
 //Если элемента по индексу нет, возвращается пустая строка...
 let pos2 = poem.charAt(1000);
 console.log(typeof pos2);
+
+// Создание подстрок
+
+let substr1 = poem.slice(5);
+let substr2 = poem.slice(0, 5);
+console.log(`This substr1:${substr1}`);
+console.log(`This substr2 ${substr2}`);
