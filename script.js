@@ -1267,5 +1267,8 @@ console.log(firstCapital);
 // Начало и конец строки
 
 let encouragement = "Ты работаешь великопленл, так держать!";
-let bool_start = encouragement.startsWith("Ты");
+let bool_start = encouragement.toLowerCase().startsWith("ты");
 console.log(bool_start);
+
+let bool_end = encouragement.endsWith("!!")
+console.log(bool_end);
