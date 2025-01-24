@@ -1252,3 +1252,14 @@ console.log(new_hi);
 let s3 = "hello hello hello amm";
 let new_s3 = s3.replaceAll("hello", "oh");
 console.log(new_s3)
+
+let low_bye = "bye bye!";
+let up_bye = low_bye.toUpperCase();
+console.log(up_bye);
+
+let caps = "HI, HOW ARE YOU?";
+let fixed_caps = caps.toLowerCase();
+console.log(fixed_caps);
+
+let firstCapital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1));
+console.log(firstCapital);
