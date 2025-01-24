@@ -1242,7 +1242,13 @@ let substr2 = poem.slice(0, 5);
 console.log(`This substr1:${substr1}`);
 console.log(`This substr2 ${substr2}`);
 
-// Замена строки
-let hi = "Hi buddy";
+// Замена строки ЗАМЕНА ПЕРВОГО ЭЛЕМЕНТА
+let hi = "Hi buddy, hi, hi";
 let new_hi = hi.replace("buddy", "Pascal");
 console.log(new_hi);
+
+// Использование replaceAll ЗАМЕНА ВСЕХ ЭЛЕМЕНТОВ
+
+let s3 = "hello hello hello amm";
+let new_s3 = s3.replaceAll("hello", "oh");
+console.log(new_s3)
