@@ -1272,3 +1272,19 @@ console.log(bool_start);
 
 let bool_end = encouragement.endsWith("!!")
 console.log(bool_end);
+
+// Практическое занятие 8.4
+
+function ToFirstCapitalize(string) {
+    string = string.toLowerCase();
+    let arrForCapitalize = [];
+    let splitString = string.split(" ");
+    for (let i = 0; i < splitString.length; i++) {
+        word = splitString[i].charAt(0).toUpperCase() + splitString[i].slice(1);
+        arrForCapitalize.push(word);
+    }
+    let strArr = arrForCapitalize.join(" ");
+    return strArr;
+
+}
+console.log(ToFirstCapitalize("Ты работаешь великоплено, так держать!"));
