@@ -1263,3 +1263,9 @@ console.log(fixed_caps);
 
 let firstCapital = fixed_caps.charAt(0).toUpperCase().concat(fixed_caps.slice(1));
 console.log(firstCapital);
+
+// Начало и конец строки
+
+let encouragement = "Ты работаешь великопленл, так держать!";
+let bool_start = encouragement.startsWith("Ты");
+console.log(bool_start);
