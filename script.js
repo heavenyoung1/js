@@ -1291,17 +1291,12 @@ console.log(ToFirstCapitalize("Ты работаешь великоплено, �
 
 // Практическое занятие 8.5
 
-function testReplace(string) {
-    let glasLet = ["a", "e", "i", "o", "u"];
-    string = string.split("");
-    for (let i = 0; i < string.length; i++) {
-        for (let j = 0; j < glasLet.length; i++) {
-            if (glasLet[j] == string[i]) {
-                console.log(stringp[i]);
-            }
-        }
-    }
-    return string;
+function replaceLet (string) {
+    return string
+        .replaceAll("a", "4")
+        .replaceAll("e", "3")
+        .replaceAll("i", "1")
+        .replaceAll("o", "0");
 }
 
-console.log(testReplace("ferfeg fefwe qwjswnojd"))
+console.log(replaceLet("I love JavaScript"));
