@@ -1288,3 +1288,20 @@ function ToFirstCapitalize(string) {
 
 }
 console.log(ToFirstCapitalize("Ты работаешь великоплено, так держать!"));
+
+// Практическое занятие 8.5
+
+function testReplace(string) {
+    let glasLet = ["a", "e", "i", "o", "u"];
+    string = string.split("");
+    for (let i = 0; i < string.length; i++) {
+        for (let j = 0; j < glasLet.length; i++) {
+            if (glasLet[j] == string[i]) {
+                console.log(stringp[i]);
+            }
+        }
+    }
+    return string;
+}
+
+console.log(testReplace("ferfeg fefwe qwjswnojd"))
