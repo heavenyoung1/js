@@ -1300,3 +1300,14 @@ function replaceLet (string) {
 }
 
 console.log(replaceLet("I love JavaScript"));
+
+// Проверка на принадлежность числовому типу данных 
+
+let xx = 34;
+console.log(isNaN(xx));
+console.log(!isNaN(xx));
+let str3 = "Hi";
+console.log(isNaN(str3));
+
+let str4 = "5";
+console.log(isNaN(str4)); //ЗДЕСЬ FALSE. JS видит число в строке
