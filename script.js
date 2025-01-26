@@ -1311,3 +1311,13 @@ console.log(isNaN(str3));
 
 let str4 = "5";
 console.log(isNaN(str4)); //ЗДЕСЬ FALSE. JS видит число в строке
+
+// Проверка на конечность значения
+console.log("Checking of isFinite");
+
+let x4 = 4;
+let str5 = "finite";
+console.log(isFinite(x4));
+console.log(isFinite(str5));
+console.log(isFinite(Infinity));
+console.log(isFinite(10 / 0));
