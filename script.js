@@ -1327,8 +1327,16 @@ console.log(isFinite(10 / 0));
 console.log(Number.isInteger(xx));
 
 // Указание количества знаков после запятой
-
-let x5 = 1.345;
+// Метод ОКРУГЛЯЕТ значение, а не просто ОТРЕЗАЕТ данные
+let x5 = 1.34941;
 let x5Fixed2 = x5.toFixed(2);
 let x5Fixed5 = x5.toFixed(5);
 console.log(x5Fixed2, x5Fixed5);
+
+// Указание необходимой точности
+
+let newx5 = x5.toPrecision(3)
+console.log(newx5);
+
+
+
