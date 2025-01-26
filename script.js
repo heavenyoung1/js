@@ -1348,4 +1348,8 @@ console.log(hisghest, lowest);
 let hisghest1 = Math.max(1, 2, "Lol" , 3, 56, 99, 100, -1)
 console.log(hisghest1);
 
+let result444 = Math.sqrt(64);
+console.log(result444);
 
+let result555 = Math.pow(5, 3); //Основание, степень
+console.log(result555); // 5 x 5 x 5
