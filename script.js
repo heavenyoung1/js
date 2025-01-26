@@ -1356,11 +1356,19 @@ console.log(result555); // 5 x 5 x 5
 
 // Преобразование десятичных дробей в целые числа
 
-let m = 7.78;
-let n = 5.21;
+let m = -7.78;
+let n = -5.21;
+let m1 = 6.78;
+let n1 = 5.34;
 
 console.log(`(ROUND) m: ${m} becomes ${Math.round(m)}`);
 console.log(`(ROUND) n: ${n} becomes ${Math.round(n)}`);
 
 console.log(`(ceil) m: ${m} becomes ${Math.ceil(m)}`);
 console.log(`(ceil) n: ${n} becomes ${Math.ceil(n)}`);
+
+console.log(`(floor) m: ${m} becomes ${Math.floor(m)}`);
+console.log(`(floor) n: ${n} becomes ${Math.floor(n)}`);
+
+console.log(`(trunc) m: ${m1} becomes ${Math.trunc(m1)}`);
+console.log(`(trunc) n: ${n1} becomes ${Math.trunc(n1)}`);
