@@ -1372,3 +1372,8 @@ console.log(`(floor) n: ${n} becomes ${Math.floor(n)}`);
 
 console.log(`(trunc) m: ${m1} becomes ${Math.trunc(m1)}`);
 console.log(`(trunc) n: ${n1} becomes ${Math.trunc(n1)}`);
+
+let exp = Math.exp(x); // Число Эйлера из математики
+console.log(`Exp: ${exp}`);
+let log = Math.log(x);
+console.log(`Log: ${log}`);
