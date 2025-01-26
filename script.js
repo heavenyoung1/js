@@ -1338,5 +1338,14 @@ console.log(x5Fixed2, x5Fixed5);
 let newx5 = x5.toPrecision(3)
 console.log(newx5);
 
+// МАТЕМАТИЧЕСКИЕ МЕТОДЫ
+
+let hisghest = Math.max(1, 2, 3, 56, 99, 100, -1)
+let lowest = Math.min(1, 2, 3, 56, 99, 100, -1);
+console.log(hisghest, lowest);
+
+// Результат будет Nan, так как метод не может определить как число второй элемент
+let hisghest1 = Math.max(1, 2, "Lol" , 3, 56, 99, 100, -1)
+console.log(hisghest1);
 
 
