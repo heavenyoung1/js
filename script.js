@@ -1321,3 +1321,8 @@ console.log(isFinite(x4));
 console.log(isFinite(str5));
 console.log(isFinite(Infinity));
 console.log(isFinite(10 / 0));
+
+// Проверка целых чисел
+
+console.log(Number.isInteger(xx));
+
