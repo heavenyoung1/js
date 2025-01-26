@@ -1353,3 +1353,14 @@ console.log(result444);
 
 let result555 = Math.pow(5, 3); //Основание, степень
 console.log(result555); // 5 x 5 x 5
+
+// Преобразование десятичных дробей в целые числа
+
+let m = 7.78;
+let n = 5.21;
+
+console.log(`(ROUND) m: ${m} becomes ${Math.round(m)}`);
+console.log(`(ROUND) n: ${n} becomes ${Math.round(n)}`);
+
+console.log(`(ceil) m: ${m} becomes ${Math.ceil(m)}`);
+console.log(`(ceil) n: ${n} becomes ${Math.ceil(n)}`);
