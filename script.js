@@ -1402,3 +1402,22 @@ function ranNum(min, max) {
 for (let i = 0; i < 100; i++) {
     console.log(ranNum(1, 1000));
 }
+
+// Методы работы с датами
+
+// Генерирование дат
+
+let cuurentDataTime = new Date();
+console.log(cuurentDataTime);
+
+let now = Date.now();
+console.log(now);
+
+let miliDate = new Date(1000);
+console.log(miliDate);
+
+let stringDate = new Date("Sat Jun 05 2021 12:40:12 GMT+0200");
+console.log(stringDate);
+
+let specificDate = new Date(2022, 1, 10, 12, 10, 15, 100);
+console.log(specificDate);
