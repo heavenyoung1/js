@@ -1377,3 +1377,28 @@ let exp = Math.exp(x); // Число Эйлера из математики
 console.log(`Exp: ${exp}`);
 let log = Math.log(x);
 console.log(`Log: ${log}`);
+
+// Практическое занятие 8.6
+
+const PI = Math.PI;
+let m2 = 5.7;
+let m2Ceil = Math.ceil(m2);
+//let m2Ceil = Math.floor(Math.ceil(m2));
+console.log(m2Ceil);
+
+const randIntFrom0 = Math.floor(Math.random() * 10);
+console.log(randIntFrom0);
+
+const randIntFrom1 = Math.ceil(Math.random() * 10);
+console.log(randIntFrom1);
+
+const randIntFrom1To100 = Math.ceil(Math.random() * 100);
+console.log(randIntFrom1To100);
+
+function ranNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+for (let i = 0; i < 100; i++) {
+    console.log(ranNum(1, 1000));
+}
