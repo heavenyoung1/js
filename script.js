@@ -1421,3 +1421,20 @@ console.log(stringDate);
 
 let specificDate = new Date(2022, 1, 10, 12, 10, 15, 100);
 console.log(specificDate);
+
+// Методы получения и установки элементов даты
+
+let d = new Date();
+console.log(`День недели ${d.getDay()}`);
+console.log(`Число месяца ${d.getDate()}`);
+console.log(`Месяц ${d.getMonth()}`);
+console.log(`Год ${d.getFullYear()}`)
+console.log("Seconds:", d.getSeconds());
+console.log("Milliseconds:", d.getMilliseconds()); 
+console.log("Time:", d.getTime()); // число миллисекунд, прошедших с 1 января 1970 года
+
+d.setMonth(9);
+console.log(d);
+
+d.setDate(10);
+console.log(d);
