@@ -1438,3 +1438,16 @@ console.log(d);
 
 d.setDate(10);
 console.log(d);
+
+d.setHours(10);
+console.log(d);
+
+d.setTime(2722889770682);
+console.log(d);
+
+// Парсинг дат
+
+let d2 = Date.parse("January 27, 2025");
+console.log(d2)
+console.log(d.toDateString());
+console.log(d.toLocaleDateString());
