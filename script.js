@@ -1451,3 +1451,18 @@ let d2 = Date.parse("January 27, 2025");
 console.log(d2)
 console.log(d.toDateString());
 console.log(d.toLocaleDateString());
+
+// Практическое занятие 8.7
+let getMMonth = (array, index) => array[index];
+
+const dateNow = new Date();
+console.log(dateNow)
+
+const arrMonth = ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь", "декабрь"];
+
+let dateNowDay = dateNow.getDate();
+let dateNowYear = dateNow.getFullYear();
+let dateNowMonth = dateNow.getMonth();
+console.log(dateNowDay, dateNowMonth, dateNowYear);
+
+console.log(`Today - ${dateNowDay} ${getMMonth(arrMonth, dateNowMonth)} ${dateNowYear}`);
