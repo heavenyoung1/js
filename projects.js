@@ -225,27 +225,19 @@
 
 // Скремблер слов
 
-let myWord = "Scrambler";
-let temp = "";
-let strToArr = myWord.split("")
-console.log(strToArr)
-let maxIteration = myWord.length;
-let tempVar;
-let completeWord = "";
-console.log(tempVar)
-console.log(maxIteration)
-function getWord(word) {
+function scrambler(word) {
+    const maxIteration = word.length;
+    let strToArr = word.split("");
+    let tempVar;
+    let completeWord = "";
+    
 
+    for (let i = 0; i < maxIteration; i++) {
+        tempVar = Math.floor(Math.random() * strToArr.length);
+        completeWord = completeWord.concat(strToArr[tempVar]);
+        strToArr.splice(tempVar, 1)
+    }
+  return completeWord.toLowerCase();
 }
 
-
-for (let i = 0; i < maxIteration; i++) {
-    tempVar = Math.floor(Math.random() * strToArr.length); // Берем рандомное число
-    console.log(`This random ${tempVar}`)
-    completeWord = completeWord.concat(strToArr[tempVar]);
-    console.log(`This completeword ${completeWord}`)
-    strToArr.splice(tempVar, 1)
-    console.log(strToArr.length, strToArr)
-}
-
-console.log(completeWord)
+console.log(scrambler("Человек"));
