@@ -198,29 +198,48 @@
 
 // Расчёт стоимости заказов
 
-class Menu {
-    #offer1 = 10;
-    #offer2 = 20;
-    constructor (amount1, amount2) {
-        this.amount1 = amount1;
-        this.amount2 = amount2;
-    }
+// class Menu {
+//     #offer1 = 10;
+//     #offer2 = 20;
+//     constructor (amount1, amount2) {
+//         this.amount1 = amount1;
+//         this.amount2 = amount2;
+//     }
 
-    callTotal() {
-        return(this.amount1 * this.#offer1 + this.amount2 * this.#offer2);
-    }
+//     callTotal() {
+//         return(this.amount1 * this.#offer1 + this.amount2 * this.#offer2);
+//     }
 
-    get totalValueOffer() {
-        return this.callTotal();
-    }
+//     get totalValueOffer() {
+//         return this.callTotal();
+//     }
+// }
+
+// const val1 = new Menu(2,0);
+// const val2 = new Menu(1,3);
+// const val3 = new Menu(3,2);
+
+// console.log(val1.totalValueOffer);
+// console.log(val2.totalValueOffer);
+// console.log(val3.totalValueOffer);
+
+// Скремблер слов
+
+let myWord = "Scrambler";
+let temp = "";
+let maxIteration = myWord.length;
+let tempVar;
+console.log(tempVar)
+console.log(maxIteration)
+function getWord(word) {
+
 }
 
-const val1 = new Menu(2,0);
-const val2 = new Menu(1,3);
-const val3 = new Menu(3,2);
+for (let i = 0; i < maxIteration; i++) {
+    console.log(myWord[i], i)
+    tempVar = Math.floor(Math.random() * maxIteration);
+    temp = temp.concat(myWord[tempVar]);
+    myWord.slice(tempVar)
+}
 
-console.log(val1.totalValueOffer);
-console.log(val2.totalValueOffer);
-console.log(val3.totalValueOffer);
-
-
+console.log(myWord, temp)
