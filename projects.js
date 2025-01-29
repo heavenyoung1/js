@@ -227,19 +227,25 @@
 
 let myWord = "Scrambler";
 let temp = "";
+let strToArr = myWord.split("")
+console.log(strToArr)
 let maxIteration = myWord.length;
 let tempVar;
+let completeWord = "";
 console.log(tempVar)
 console.log(maxIteration)
 function getWord(word) {
 
 }
 
+
 for (let i = 0; i < maxIteration; i++) {
-    console.log(myWord[i], i)
-    tempVar = Math.floor(Math.random() * maxIteration);
-    temp = temp.concat(myWord[tempVar]);
-    myWord.slice(tempVar)
+    tempVar = Math.floor(Math.random() * strToArr.length); // Берем рандомное число
+    console.log(`This random ${tempVar}`)
+    completeWord = completeWord.concat(strToArr[tempVar]);
+    console.log(`This completeword ${completeWord}`)
+    strToArr.splice(tempVar, 1)
+    console.log(strToArr.length, strToArr)
 }
 
-console.log(myWord, temp)
+console.log(completeWord)
