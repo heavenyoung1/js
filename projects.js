@@ -241,19 +241,26 @@ function scrambler(word) {
 
 console.log(scrambler("Человек"));
 
-// Таймер обратного отсчёта
+//Таймер обратного отсчёта
 
 const nowDate = new Date();
 console.log(nowDate);
-const finalDate = new Date(2020, 12, 31, 23, 59, 59);
+const finalDate = new Date(2020, 12, 31, 23, 59, 59); // Месяцы в JS начинаются с 0!
 console.log(finalDate);
 
 console.log(`${nowDate.getTime()} - ${finalDate.getTime()}`);
 
 function timerLeft(date1, date2) {
-  time = date1.getTime() - date2.getTime();
-  timeRU = time.toLocalString("ru-RU");
-  return timeRU
+  let time = date1.getTime() - date2.getTime();
+  return msToTime(time);
+}
+
+function msToTime (ms) {
+  let day = Math.floor((ms / ( 1000 * (60 * 60 * 24))));
+  return day
 }
 
 console.log(timerLeft(nowDate, finalDate))
+
+
+
