@@ -231,7 +231,6 @@ function scrambler(word) {
     let tempVar;
     let completeWord = "";
     
-
     for (let i = 0; i < maxIteration; i++) {
         tempVar = Math.floor(Math.random() * strToArr.length);
         completeWord = completeWord.concat(strToArr[tempVar]);
@@ -241,3 +240,20 @@ function scrambler(word) {
 }
 
 console.log(scrambler("Человек"));
+
+// Таймер обратного отсчёта
+
+const nowDate = new Date();
+console.log(nowDate);
+const finalDate = new Date(2020, 12, 31, 23, 59, 59);
+console.log(finalDate);
+
+console.log(`${nowDate.getTime()} - ${finalDate.getTime()}`);
+
+function timerLeft(date1, date2) {
+  time = date1.getTime() - date2.getTime();
+  timeRU = time.toLocalString("ru-RU");
+  return timeRU
+}
+
+console.log(timerLeft(nowDate, finalDate))
