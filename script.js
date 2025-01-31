@@ -1466,3 +1466,11 @@ let dateNowMonth = dateNow.getMonth();
 console.log(dateNowDay, dateNowMonth, dateNowYear);
 
 console.log(`Today - ${dateNowDay} ${getMMonth(arrMonth, dateNowMonth)} ${dateNowYear}`);
+
+// ГЛАВА 9 DOM && BOM
+
+console.dir(window)
+console.log(`Ширина ${window.innerWidth} Высота ${window.innerHeight}`);
+console.dir(history);
+window.history.go(1);
+console.log(navigator);

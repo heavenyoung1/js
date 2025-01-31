@@ -244,11 +244,7 @@ console.log(scrambler("Человек"));
 //Таймер обратного отсчёта
 
 const nowDate = new Date();
-console.log(nowDate);
-const finalDate = new Date(2021, 11, 15, 10, 50, 59); // Месяцы в JS начинаются с 0!
-console.log(finalDate);
-
-console.log(`${nowDate.getTime()} - ${finalDate.getTime()}`);
+const finalDate = new Date(2021, 11, 15, 10, 50, 59);
 
 function timerLeft(date1, date2) {
   let time = date1.getTime() - date2.getTime();
@@ -263,7 +259,6 @@ function msToTime (ms) {
   return `${day} дн. ${hour} ч. ${minute} мин. ${second} сек.`;
 }
 
-console.log(timerLeft(nowDate, finalDate))
-
+//setTimeout(() => console.log(timerLeft(nowDate, finalDate)), 1000);
 
 
