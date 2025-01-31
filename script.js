@@ -1474,3 +1474,10 @@ console.log(`Ширина ${window.innerWidth} Высота ${window.innerHeight
 console.dir(history);
 window.history.go(1);
 console.log(navigator);
+console.log(location.ancestorOrigins.length) //получим значение длины объекта ancestorOrigins, который показывает, со сколькими контекстами просмотра связана наша страница 
+
+// Практическое занятие 9.2
+
+console.log(window.location);
+console.log(window.location.protocol);
+console.log(window.location.href);
