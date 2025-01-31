@@ -245,7 +245,7 @@ console.log(scrambler("Человек"));
 
 const nowDate = new Date();
 console.log(nowDate);
-const finalDate = new Date(2020, 12, 31, 23, 59, 59); // Месяцы в JS начинаются с 0!
+const finalDate = new Date(2021, 11, 15, 10, 50, 59); // Месяцы в JS начинаются с 0!
 console.log(finalDate);
 
 console.log(`${nowDate.getTime()} - ${finalDate.getTime()}`);
@@ -256,8 +256,11 @@ function timerLeft(date1, date2) {
 }
 
 function msToTime (ms) {
-  let day = Math.floor((ms / ( 1000 * (60 * 60 * 24))));
-  return day
+  let second = Math.floor((ms / 1000) % 60);
+  let minute = Math.floor((ms / (1000 * 60)) % 60);
+  let hour = Math.floor((ms / (1000 * 60 * 60)) % 24);
+  let day = Math.floor(ms / (1000 * 60 * 60 * 24));
+  return `${day} дн. ${hour} ч. ${minute} мин. ${second} сек.`;
 }
 
 console.log(timerLeft(nowDate, finalDate))
