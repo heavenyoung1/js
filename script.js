@@ -1481,3 +1481,12 @@ console.log(location.ancestorOrigins.length) //получим значение �
 console.log(window.location);
 console.log(window.location.protocol);
 console.log(window.location.href);
+
+// Практическое занятие 9.3
+
+let element = document.querySelector(".output");
+element.textContent = "red";
+element.classList.add = "pedro";
+element.id = "tester";
+element.style.backgroundColor = "red";
+let urlList = document.URL;
