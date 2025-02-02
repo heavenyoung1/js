@@ -261,4 +261,9 @@ function msToTime (ms) {
 
 //setTimeout(() => console.log(timerLeft(nowDate, finalDate)), 1000);
 
+// Управление элементами HTML с помощью JavaScript
 
+let classOutput = querySelector("output");
+let mainList =  output.querySelector("ul");
+mainList.id = ("MainList");
+console.log(mainList);
