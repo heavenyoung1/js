@@ -263,7 +263,11 @@ function msToTime (ms) {
 
 // Управление элементами HTML с помощью JavaScript
 
-let classOutput = querySelector("output");
-let mainList =  output.querySelector("ul");
-mainList.id = ("MainList");
+let classOutput = document.querySelector(".output");
+let mainList =  classOutput.querySelector("ul");
+mainList.id = "mainList";
 console.log(mainList);
+const eles = document.querySelectorAll("div");
+for (let i = 0; i < eles.length; i++) {
+  console.log(eles[i].tagName)
+}
