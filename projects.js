@@ -267,14 +267,15 @@ let classOutput = document.querySelector(".output");
 let mainList =  classOutput.querySelector("ul");
 mainList.id = "mainList";
 console.log(mainList);
-const eles = document.querySelector("div");
+
+const eles = document.querySelectorAll("div");
 
 for (let i = 0; i < eles.length; i++) {
-  eles[i].id = (i);
-  console.log(eles[i].tagName)
-  if (i % 2) {
-    eles[i].styleColor = "red";
+  eles[i].id = `item-${i + 1}`;
+  console.log(eles[i].id); // Выводим id в консоль
+  if (i % 2 == 0) {
+    eles[i].style.color = "red";
   } else {
-    eles[i].styleColor = "blue";
+    eles[i].style.color = "green";
   }
 }
