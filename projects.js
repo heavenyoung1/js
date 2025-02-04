@@ -267,7 +267,14 @@ let classOutput = document.querySelector(".output");
 let mainList =  classOutput.querySelector("ul");
 mainList.id = "mainList";
 console.log(mainList);
-const eles = document.querySelectorAll("div");
+const eles = document.querySelector("div");
+
 for (let i = 0; i < eles.length; i++) {
+  eles[i].id = (i);
   console.log(eles[i].tagName)
+  if (i % 2) {
+    eles[i].styleColor = "red";
+  } else {
+    eles[i].styleColor = "blue";
+  }
 }
