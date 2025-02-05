@@ -266,16 +266,21 @@ function msToTime (ms) {
 let classOutput = document.querySelector(".output");
 let mainList =  classOutput.querySelector("ul");
 mainList.id = "mainList";
-console.log(mainList);
+//console.log(mainList);
 
 const eles = document.querySelectorAll("div");
+console.log(eles.length)
 
 for (let i = 0; i < eles.length; i++) {
-  eles[i].id = `item-${i + 1}`;
-  console.log(eles[i].id); // Выводим id в консоль
-  if (i % 2 == 0) {
-    eles[i].style.color = "red";
-  } else {
-    eles[i].style.color = "green";
+  console.log(eles[i])
+  for (let j = 0; i.length; j++) {
+    console.log(i[j]);
+    i[j].id = j;
+    console.log(i);
+    if (i[j].id % 2 == 0) {
+      i[j].style.color = "red";
+    }
+    i[j].style.color = "blue";
   }
 }
+
