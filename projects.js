@@ -263,24 +263,21 @@ function msToTime (ms) {
 
 // Управление элементами HTML с помощью JavaScript
 
+// Находим элемент <ul> внутри элемента с классом "output"
 let classOutput = document.querySelector(".output");
-let mainList =  classOutput.querySelector("ul");
-mainList.id = "mainList";
-//console.log(mainList);
+let mainList = classOutput.querySelector("ul");
+mainList.id = "mainList"; // Присваиваем id <ul>
 
-const eles = document.querySelectorAll("div");
-console.log(eles.length)
+let listItems = mainList.querySelectorAll("li");
 
-for (let i = 0; i < eles.length; i++) {
-  console.log(eles[i])
-  for (let j = 0; i.length; j++) {
-    console.log(i[j]);
-    i[j].id = j;
-    console.log(i);
-    if (i[j].id % 2 == 0) {
-      i[j].style.color = "red";
-    }
-    i[j].style.color = "blue";
+for (let i = 0; i < listItems.length; i++) {
+  let listItem = listItems[i];
+  listItem.id = `id-${i + 1}`;
+  console.log(`Элемент: ${listItem.textContent}, Новый ID: ${listItem.id}`);
+
+  if (i % 2 === 0) {
+    listItem.style.color = "red";
+  } else {
+    listItem.style.color = "blue";
   }
 }
-
