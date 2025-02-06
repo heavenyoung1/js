@@ -1484,9 +1484,16 @@ console.log(window.location.href);
 
 // Практическое занятие 9.3
 
-let element = document.querySelector(".output");
-element.textContent = "red";
-element.classList.add = "pedro";
-element.id = "tester";
-element.style.backgroundColor = "red";
-let urlList = document.URL;
+// let element = document.querySelector(".output");
+// element.textContent = "red";
+// element.classList.add = "pedro";
+// element.id = "tester";
+// element.style.backgroundColor = "red";
+// let urlList = document.URL;
+
+// Управление динамическими элементами при помощи DOM
+
+console.dir(document.body);
+console.dir(document.body.children.forest.children.tree2.children.shrubbery.children.treasure);
+console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1]);
+console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].children.treasure);
