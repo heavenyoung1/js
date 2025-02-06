@@ -1510,3 +1510,9 @@ console.log(document.getElementById("greenEl"))
 // Получение элемента по названию тега
 
 console.log(document.getElementsByTagName("div"));
+// Получение первого элемента в массиве
+document.getElementsByTagName("div").item(1);
+// Запрос элемента по имени
+document.getElementsByTagName("div").namedItem("one");
+
+document.getElementsByTagName("h1");
