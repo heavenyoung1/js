@@ -1503,3 +1503,7 @@ console.dir(document.body.children.forest.children.tree1.parentElement);
 // Команда для измененения innerText
 document.body.children.id1.children.testingH2.innerText = "Hi, I'm WOLF. BUE!";
 document.body.children.id1.children.testingH2.innerHTML = "<p>Hi, I'm WOLF. HI!!!!</p>";
+
+// Получение элемента по id
+
+console.log(document.getElementById("greenEl"))
