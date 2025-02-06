@@ -1499,3 +1499,4 @@ console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].childNodes[1
 console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].children.treasure);
 console.dir(document.body.children.forest.children.tree1.parentElement);
 // Код выше использовать в консоли браузера!
+
