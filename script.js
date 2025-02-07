@@ -1546,6 +1546,13 @@ function reveal(el){
     console.log(el);
     }
 
+// вариаций 100500 разных!!!
 function revealOne (el) {
-    console.log(el.parentElement);
+    console.log(el.innerText);
+}
+
+// Практическое занятие 10.7
+
+function messageQ (element) {
+    console.log(element.innerText)
 }
