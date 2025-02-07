@@ -1534,3 +1534,8 @@ for (let i = 0; i < elesClassOne.length; i++) {
 function stop(){
     alert("Ouch! Stop it!");
     }
+
+// Работает
+document.getElementById("lolik").onclick = function () {
+    alert("Auch! Stop!");
+    }
