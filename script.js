@@ -1531,3 +1531,6 @@ for (let i = 0; i < elesClassOne.length; i++) {
 
 // Обработчик щелчка кнопкой мыши на элементе
 
+function stop(){
+    alert("Ouch! Stop it!");
+    }
