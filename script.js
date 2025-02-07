@@ -1539,3 +1539,9 @@ function stop(){
 document.getElementById("lolik").onclick = function () {
     alert("Auch! Stop!");
     }
+
+// Ключевое слово this и DOM
+
+function reveal(el){
+    console.log(el);
+    }
