@@ -1516,3 +1516,6 @@ document.getElementsByTagName("div").item(1);
 document.getElementsByTagName("div").namedItem("one");
 
 document.getElementsByTagName("h1");
+//
+document.querySelector("h1")
+document.querySelector(".main")
