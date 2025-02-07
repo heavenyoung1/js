@@ -1545,3 +1545,7 @@ document.getElementById("lolik").onclick = function () {
 function reveal(el){
     console.log(el);
     }
+
+function revealOne (el) {
+    console.log(el.parentElement);
+}
