@@ -1528,3 +1528,6 @@ let elesClassOneM = document.getElementsByClassName("classOne");
 for (let i = 0; i < elesClassOne.length; i++) {
     console.log(elesClassOne[i]);
 }
+
+// Обработчик щелчка кнопкой мыши на элементе
+
