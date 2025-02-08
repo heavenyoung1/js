@@ -1567,3 +1567,11 @@ function toggleDisplay() {
     p.style.display = "none";
 }
 }
+
+// Еще одно управление стилем элементов
+function rainbowify () {
+    let divsColor = document.getElementsByTagName("div");
+    for (let i = 0; i < divsColor.length; i++) {
+        divsColor[i].backgroundColor = divsColor[i].id;
+    }
+}
