@@ -44,7 +44,7 @@ body {
   float: right;
 }
 
-div {
+.divColorTest {
   height: 30px;
   width: 30px;
   background-color: white;
