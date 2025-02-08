@@ -1556,3 +1556,14 @@ function revealOne (el) {
 function messageQ (element) {
     console.log(element.innerText)
 }
+
+// Управление стилем элемента
+
+function toggleDisplay() {
+    let p = document.getElementById("magic");
+    if (p.style.display === "none") {
+        p.style.display = "block";
+    } else {
+    p.style.display = "none";
+}
+}
