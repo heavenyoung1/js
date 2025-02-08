@@ -43,3 +43,9 @@ body {
 .new-quote-button {
   float: right;
 }
+
+div {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+}
