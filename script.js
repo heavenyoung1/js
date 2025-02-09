@@ -1582,3 +1582,7 @@ function getStyleCSS(element) { //Функция для тестирования
     let styleC = element.style;
         return styleC;
 }
+
+function disappear() {
+    document.getElementById("shape").classList.add("hide");
+}
