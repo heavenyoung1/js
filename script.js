@@ -1572,13 +1572,13 @@ function toggleDisplay() {
 function rainbowify () {
     let divsColor = document.getElementsByTagName("div");
     for (let i = 0; i < divsColor.length; i++) {
-        divsColor[i].backgroundColor = divsColor[i].id;
+        divsColor[i].style.backgroundColor = divsColor[i].id;
         console.log(`ID - ${divsColor[i].id}, Color - ${divsColor[i].backgroundColor}`);
     }
 }
 
 function getStyleCSS(element) { //Функция для тестирования стилей
-    const element = document.getElementById(element);
+    element = document.getElementById(element);
     let styleC = element.style;
         return styleC;
 }
