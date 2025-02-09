@@ -1583,6 +1583,13 @@ function getStyleCSS(element) { //Функция для тестирования
         return styleC;
 }
 
+// Смена класса
 function disappear() {
     document.getElementById("shape").classList.add("hide");
+}
+
+// Удаление класса 
+
+function changeClass () {
+    document.getElementById("shape").classList.remove("blue");
 }
