@@ -1593,3 +1593,8 @@ function disappear() {
 function changeClass () {
     document.getElementById("shape").classList.remove("blue");
 }
+
+// Переключение классов
+function changeVisible () {
+    document.getElementById("shape").classList.toggle("hide");
+}
