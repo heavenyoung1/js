@@ -63,3 +63,7 @@ body {
 .square.blue {
   background-color: blue;
 }
+
+.circle {
+  border-radius: 50%;
+  }

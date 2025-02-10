@@ -1598,3 +1598,11 @@ function changeClass () {
 function changeVisible () {
     document.getElementById("shape").classList.toggle("hide");
 }
+
+// Управление атрибутами
+
+function changeAttr() {
+    let el = document.getElementById("shape1");
+    el.setAttribute("style", "backgroundColor:red, border:2px black solid");
+    el.setAttribute("class", "circle");
+}
