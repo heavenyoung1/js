@@ -1606,3 +1606,14 @@ function changeAttr() {
     el.setAttribute("style", "backgroundColor: red; border:2px black solid");
     el.setAttribute("class", "circle");
 }
+
+window.onload = function() {
+    document.getElementById("shape2").addEventListener("click", changeColor);
+}
+
+function changeColor() {
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+}
