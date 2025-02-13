@@ -1617,3 +1617,20 @@ function changeColor() {
     let blue = Math.floor(Math.random() * 256);
     this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
+
+const container = document.getElementById("table-container");
+
+// Практическое занятие 10.8
+function builld() {
+    const nameArray1 =["Elon", "Joe", "Donald", "Vladimir", "Benjamin"];
+    let el1 = document.body;
+    let html = "<table>";
+    for (let i = 0; i < nameArray1.length; i++) {
+        html += `<tr><td>${nameArray1[i]}</td></tr>`;
+    html += "</table>"
+    } 
+    const container = document.getElementById("table-container");
+    container.innerHTML = html;
+}
+
+builld();
