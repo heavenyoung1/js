@@ -1631,7 +1631,7 @@ function builld() {
     html += "</table>";
     const container = document.getElementById("table-container");
     container.innerHTML = html;
-    console.log(html)
+    console.log(html);
 }
 
 builld();
