@@ -1626,12 +1626,12 @@ function build() {
     let el1 = document.body;
     let html = "<table>\n";
         for (let i = 0; i < nameArray1.length; i++) {
-            html += `<tr data-row="${i}" dataname="${nameArray1[i]} onclick="${getData1(this)}"><td сlass="box">${nameArray1[i]}</td></tr>\n`;
+            html += `<tr data-row="${i}" dataname="${nameArray1[i]}" onclick="${getData1(this)}"><td class="box">${nameArray1[i]}</td></tr>\n`;
         } 
     html += "</table>";
     const container = document.getElementById("table-container");
     container.innerHTML = html;
-    console.log(html);
+    //console.log(html);
 }
 
 function getData1(el) {
