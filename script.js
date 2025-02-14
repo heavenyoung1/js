@@ -1638,8 +1638,11 @@ function build() {
 }
 
 function getData1(el) {
-    let attr = el.getAttribute;
-    console.log(attr);
+    let attr1 = el.getAttribute("dataname");
+    let attr2 = el.getAttribute("data-row");
+    let message3;
+    message3.innerHTML = `Attr1 - ${attr1}. Attr2 - ${attr2} `;
+    console.log(message3)
 }
 
 //build();
