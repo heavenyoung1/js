@@ -1621,7 +1621,7 @@ function changeColor() {
 const container = document.getElementById("table-container");
 
 // Практическое занятие 10.8
-function builld() {
+function build() {
     const nameArray1 =["Elon", "Joe", "Donald", "Vladimir", "Benjamin"];
     let el1 = document.body;
     let html = "<table>\n";
