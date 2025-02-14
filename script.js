@@ -1624,13 +1624,14 @@ const container = document.getElementById("table-container");
 function builld() {
     const nameArray1 =["Elon", "Joe", "Donald", "Vladimir", "Benjamin"];
     let el1 = document.body;
-    let html = "<table>";
-    for (let i = 0; i < nameArray1.length; i++) {
-        html += `<tr><td>${nameArray1[i]}</td></tr>`;
-    html += "</table>"
-    } 
+    let html = "<table>\n";
+        for (let i = 0; i < nameArray1.length; i++) {
+            html += `<tr><td>${nameArray1[i]}</td></tr>\n`;
+        } 
+    html += "</table>";
     const container = document.getElementById("table-container");
     container.innerHTML = html;
+    console.log(html)
 }
 
 builld();
