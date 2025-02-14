@@ -1626,7 +1626,7 @@ function build() {
     let el1 = document.body;
     let html = "<table>\n";
         for (let i = 0; i < nameArray1.length; i++) {
-            html += `<tr><td>${nameArray1[i]}</td></tr>\n`;
+            html += `<tr><td сlass="box">${nameArray1[i]}</td></tr>\n`;
         } 
     html += "</table>";
     const container = document.getElementById("table-container");
