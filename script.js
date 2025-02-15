@@ -1634,15 +1634,11 @@ function build() {
     html += "</table>";
     const container = document.getElementById("table-container");
     container.innerHTML = html;
-    //console.log(html);
 }
 
 function getData1(el) {
     let attr1 = el.getAttribute("dataname");
     let attr2 = el.getAttribute("data-row");
-    let message3;
-    message3.innerHTML = `Attr1 - ${attr1}. Attr2 - ${attr2} `;
-    console.log(message3)
+    let message3 = document.getElementById("message3");
+    message3.innerHTML = `${attr1} - ${Number(attr2) + 1} `;
 }
-
-//build();
