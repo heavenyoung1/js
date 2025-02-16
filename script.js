@@ -1655,3 +1655,10 @@ btns109.forEach((button) => {
     button.addEventListener("click", () => output(button));
 });
 
+// Создание новых элементов
+
+function addRandomNumber() {
+    let el = document.createElement("h2");
+    el.innerText = Math.floor(Math.random() * 100);
+    document.body.appendChild(el);
+}
