@@ -1642,3 +1642,6 @@ function getData1(el) {
     let message3 = document.getElementById("message3");
     message3.innerHTML = `${attr1} - ${Number(attr2) + 1} `;
 }
+
+// Практическое занятие 10.9
+
