@@ -1645,3 +1645,13 @@ function getData1(el) {
 
 // Практическое занятие 10.9
 
+function output(el) {
+    console.log(`el.textContent - ${el.textContent}`);
+}
+
+// Без передачи анонимной функции в строке 1655 функция вызывается без нажатия
+let btns109 = document.querySelectorAll(".btn109");
+btns109.forEach((button) => {
+    button.addEventListener("click", () => output(button));
+});
+
