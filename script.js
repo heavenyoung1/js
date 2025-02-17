@@ -1662,3 +1662,18 @@ function addRandomNumber() {
     el.innerText = Math.floor(Math.random() * 100);
     document.body.appendChild(el);
 }
+
+// Практическое занятие 10.10
+
+addButton.addEventListener("click", addOne);
+
+function addOne() {
+    const inputField = document.getElementById("addItem");
+    let inputValue = inputField.value;
+
+    const addButton = document.getElementById("addButton");
+    const list = document.getElementById("itemList");
+    const newItem = document.createElement("li");
+    newItem.textContent = inputValue;
+    list.append(newItem);
+}
