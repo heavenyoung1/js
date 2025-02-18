@@ -74,3 +74,12 @@ body {
 .box {
   color: black;
 }
+/* Скрываем элементы с классом myText */
+.myText {
+  display: none;
+}
+
+/* Показываем элементы с классом active */
+.myText.active {
+  display: block;
+}

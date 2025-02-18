@@ -284,3 +284,16 @@ for (let i = 0; i < listItems.length; i++) {
 
 // Вопросы для самопроверки
 
+//Сворачиваемый компонент-аккордеон
+
+let titles = document.querySelectorAll(".title");
+let myText = document.querySelectorAll(".myText");
+
+titles.forEach((title, index) => {
+  title.addEventListener("click", () => {
+    title.classList.remove("active");
+    const text = myText[index];
+    
+    text.classList.toggle("active");
+  });
+});
