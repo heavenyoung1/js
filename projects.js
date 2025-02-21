@@ -291,9 +291,24 @@ let myText = document.querySelectorAll(".myText");
 
 titles.forEach((title, index) => {
   title.addEventListener("click", () => {
-    title.classList.remove("active");
     const text = myText[index];
-    
     text.classList.toggle("active");
   });
 });
+
+// Проект Интерактивная система голосования
+
+let arrName = ["Liza", "Anna", "Yana", "Maria", "Jason"];
+let friends = document.getElementById("message");
+let inputAddFriend = document.getElementById("addFriend");
+let btnAnnFriend = document.getElementById("addNew");
+btnAnnFriend.setAttribute("onclick", "pushName()")
+
+function pushName() {
+  let inputValue = inputAddFriend.value;
+  arrName.push(inputValue);
+  console.log(arrName);
+}
+
+
+
