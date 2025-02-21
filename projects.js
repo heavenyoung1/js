@@ -304,17 +304,14 @@ let inputAddFriend = document.getElementById("addFriend");
 let btnAnnFriend = document.getElementById("addNew");
 btnAnnFriend.addEventListener("click", pushName);
 
-
 function pushName() {
   let inputValue = inputAddFriend.value;
   arrName.push(inputValue);
   console.log(arrName);
 }
 
-function countIncrease(el) {
-  let el1;
-  el1 += 1
-  return el1;
+function countIncrease(count) {
+  return count + 1;
 }
 
 function addRowToTable() {
@@ -326,10 +323,13 @@ function addRowToTable() {
     row.textContent = `${nameIn}, ${count}`;
     tbl.appendChild(row);
     row.id = `idElName${index}`;
+
     row.addEventListener("click", () => {
-      count = countIncrease;
+      count = countIncrease(count);
       row.textContent = `${nameIn}, ${count}`;
  
-  })})};      
-addRowToTable()
+    })
+  })
+};    
 
+addRowToTable()
