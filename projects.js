@@ -302,7 +302,8 @@ let arrName = ["Liza", "Anna", "Yana", "Maria", "Jason"];
 let friends = document.getElementById("message");
 let inputAddFriend = document.getElementById("addFriend");
 let btnAnnFriend = document.getElementById("addNew");
-btnAnnFriend.setAttribute("onclick", "pushName()")
+btnAnnFriend.addEventListener("click", pushName);
+
 
 function pushName() {
   let inputValue = inputAddFriend.value;
@@ -310,5 +311,23 @@ function pushName() {
   console.log(arrName);
 }
 
+function countIncrease(el) {
+  let el1;
+  el1 += 1
+  return el1;
+}
 
+function addRowToTable() {
+  let tbl = document.getElementById("output");
+
+  arrName.forEach((nameIn, index) => {
+     let row = document.createElement("h3");
+    let count = 0;
+    row.textContent = `${nameIn}, ${count}`;
+    tbl.appendChild(row);
+    row.id = `idElName${index}`;
+    row.addEventListener("click", countIncrease(count));
+  })};
+
+addRowToTable()
 
