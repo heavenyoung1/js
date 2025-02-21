@@ -326,8 +326,10 @@ function addRowToTable() {
     row.textContent = `${nameIn}, ${count}`;
     tbl.appendChild(row);
     row.id = `idElName${index}`;
-    row.addEventListener("click", countIncrease(count));
-  })};
-
+    row.addEventListener("click", () => {
+      count = countIncrease;
+      row.textContent = `${nameIn}, ${count}`;
+ 
+  })})};      
 addRowToTable()
 
