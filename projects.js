@@ -336,3 +336,21 @@ addRowToTable();
 
 // Игра "Виселица"
 
+let words = ["APPLE", "ORANGE", "BANANA"];
+
+let letterArray = [];
+
+let guessWord = words[Math.floor(Math.random() * words.length)];
+console.log(guessWord.split(""));
+let ourContainer = document.getElementById("container3");
+let wordContainer = ourContainer.createElement("div");
+guessWord.forEach((letter, index) => {
+  let letterSpan = wordContainer.createElement("span");
+  letterSpan.textContent = "_";
+  wordContainer.appendChild(letterSpan);
+  letterArray.push(letterSpan)
+}
+
+)
+
+
