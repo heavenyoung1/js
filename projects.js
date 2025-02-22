@@ -332,4 +332,7 @@ function addRowToTable() {
   })
 };    
 
-addRowToTable()
+addRowToTable();
+
+// Игра "Виселица"
+
