@@ -1677,3 +1677,30 @@ function addOne() {
     newItem.textContent = inputValue;
     list.append(newItem);
 }
+
+// Глава 11 Интерактивный контент и прослушиватель событий
+
+document.getElementById("unique").onclick = function() { magic(); }
+
+// Практическое занятие 11.1
+
+// Объявление переменной
+var darkMode = Boolean(false);
+let bodyElInHTML = document.querySelector("body");
+let buttonMode = document.createElement("button");
+buttonMode.textContent = "Change Color";
+buttonMode.addEventListener("click", changeMode);
+bodyElInHTML.appendChild(buttonMode);
+
+function changeMode() {
+    if (darkMode === false) {
+        darkMode = true;
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+    if (darkMode === true) {
+        darkMode = false;
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+}
