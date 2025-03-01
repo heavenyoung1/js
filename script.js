@@ -1703,3 +1703,32 @@ function changeMode() {
         document.body.style.color = "white";
     }
 }
+
+// Практическое занятие 11.2
+
+let div112 = document.getElementById("ex11_2");
+let arrColor = ["blue", "pink", "red", "yellow", "brown"]
+for (let i = 0; i < arrColor.length; i++) {
+    let elDivColor = document.createElement("div");
+    elDivColor.setAttribute("id", arrColor[i]);
+    //elDivColor.addEventListener("click", changeColorOffEl);
+
+    elDivColor.addEventListener("click", function () {
+        changeColorOffEl(elDivColor);
+    })
+
+    elDivColor.style.width = "100px";
+    elDivColor.style.height = "100px";
+    elDivColor.style.margin = "5px";
+    elDivColor.style.border = "1px solid black";
+    elDivColor.textContent = arrColor[i];
+
+    div112.appendChild(elDivColor);
+    console.log(document.querySelector(`#${arrColor[i]}`))
+}
+
+function changeColorOffEl(el) {
+    el.style.backgroundColor = el.id;
+}
+
+console.log()
