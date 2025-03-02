@@ -1732,3 +1732,18 @@ function changeColorOffEl(el) {
 }
 
 console.log()
+
+function message1(textMsg, objectMsg) {
+    console.log(textMsg, objectMsg);
+} 
+
+document.addEventListener("DOMContentLoaded", function(e) {
+    message1("Document Ready", e);
+})
+
+window.onload = function(e) {
+    message1("Window Ready", e);
+}
+
+
+
