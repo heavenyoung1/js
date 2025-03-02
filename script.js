@@ -1733,17 +1733,29 @@ function changeColorOffEl(el) {
 
 console.log()
 
+//Практическое занятие 11.3
+
 function message1(textMsg, objectMsg) {
     console.log(textMsg, objectMsg);
 } 
-
-document.addEventListener("DOMContentLoaded", function(e) {
-    message1("Document Ready", e);
-})
 
 window.onload = function(e) {
     message1("Window Ready", e);
 }
 
+document.addEventListener("DOMContentLoaded", function(e) {
+    message1("Document Ready", e);
+})
+
+// Как только HTML полностью загружен срабатывает DOMContentLoaded
+// Когда загружены ВСЕ ресурсы страницы срабатывает window.onload,
+// Практическое занятие 11.3
+
+let testMouse = document.createElement("div");
+testMouse.textContent = "TESTING MOUSE";
+testMouse.style.width = "100px";
+testMouse.style.height = "100px";
+testMouse.style.border = "1px solid black";
+document.body.appendChild(testMouse)
 
 
