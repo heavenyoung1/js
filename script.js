@@ -1752,10 +1752,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
 // Практическое занятие 11.3
 
 let testMouse = document.createElement("div");
-testMouse.textContent = "TESTING MOUSE";
+testMouse.textContent = "HELLO WORLD";
 testMouse.style.width = "100px";
 testMouse.style.height = "100px";
+testMouse.id = "testIdMouse";
 testMouse.style.border = "1px solid black";
-document.body.appendChild(testMouse)
+testMouse.style.backgroundColor = "pink";
+testMouse.style.margin = "10px 10px 10px 10px";
+testMouse.setAttribute = ("class", "testMouseClass");
+document.body.appendChild(testMouse);
+obj.addEventListener("mousedown", "green");
+
+function changeColorMouse(color, event) {
+    console.log(color, event);
+    let obj = document.querySelector("testIdMouse");
+    obj.el.style
+    
+
+}
+
 
 
