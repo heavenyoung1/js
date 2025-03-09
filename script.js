@@ -1677,3 +1677,85 @@ function addOne() {
     newItem.textContent = inputValue;
     list.append(newItem);
 }
+
+// Глава 11 Интерактивный контент и прослушиватель событий
+
+document.getElementById("unique").onclick = function() { magic(); }
+
+// Практическое занятие 11.1
+
+// Объявление переменной
+var darkMode = Boolean(false);
+let bodyElInHTML = document.querySelector("body");
+let buttonMode = document.createElement("button");
+buttonMode.textContent = "Change Color";
+buttonMode.addEventListener("click", changeMode);
+bodyElInHTML.appendChild(buttonMode);
+
+function changeMode() {
+    if (darkMode === false) {
+        darkMode = true;
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    } else {
+        darkMode = false;
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+    }
+}
+
+// Практическое занятие 11.2
+
+let div112 = document.getElementById("ex11_2");
+let arrColor = ["blue", "pink", "red", "yellow", "brown"]
+for (let i = 0; i < arrColor.length; i++) {
+    let elDivColor = document.createElement("div");
+    elDivColor.setAttribute("id", arrColor[i]);
+    //elDivColor.addEventListener("click", changeColorOffEl);
+
+    elDivColor.addEventListener("click", function () {
+        changeColorOffEl(elDivColor);
+    })
+
+    elDivColor.style.width = "100px";
+    elDivColor.style.height = "100px";
+    elDivColor.style.margin = "5px";
+    elDivColor.style.border = "1px solid black";
+    elDivColor.textContent = arrColor[i];
+
+    div112.appendChild(elDivColor);
+    console.log(document.querySelector(`#${arrColor[i]}`))
+}
+
+function changeColorOffEl(el) {
+    el.style.backgroundColor = el.id;
+}
+
+console.log()
+
+//Практическое занятие 11.3
+
+function message1(textMsg, objectMsg) {
+    console.log(textMsg, objectMsg);
+} 
+
+window.onload = function(e) {
+    message1("Window Ready", e);
+}
+
+document.addEventListener("DOMContentLoaded", function(e) {
+    message1("Document Ready", e);
+})
+
+// Как только HTML полностью загружен срабатывает DOMContentLoaded
+// Когда загружены ВСЕ ресурсы страницы срабатывает window.onload,
+// Практическое занятие 11.3
+
+let testMouse = document.createElement("div");
+testMouse.textContent = "TESTING MOUSE";
+testMouse.style.width = "100px";
+testMouse.style.height = "100px";
+testMouse.style.border = "1px solid black";
+document.body.appendChild(testMouse)
+
+
