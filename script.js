@@ -1749,13 +1749,25 @@ document.addEventListener("DOMContentLoaded", function(e) {
 
 // Как только HTML полностью загружен срабатывает DOMContentLoaded
 // Когда загружены ВСЕ ресурсы страницы срабатывает window.onload,
+
 // Практическое занятие 11.3
 
 let testMouse = document.createElement("div");
+testMouse.setAttribute("id", "testMouseID")
 testMouse.textContent = "TESTING MOUSE";
 testMouse.style.width = "100px";
 testMouse.style.height = "100px";
 testMouse.style.border = "1px solid black";
-document.body.appendChild(testMouse)
+testMouse.style.margin = "50px 5px 5px 5px";
+document.body.appendChild(testMouse);
 
+function changeColorTestMouse(color, event) {
+    el = document.getElementById("testMouseID");
+    console.log(`Color - ${color}, Event - ${event}`);
+    el.style.backgroundColor = color;
+}
 
+testMouse.addEventListener("mousedown", function() {changeColorTestMouse("green", "mousedown")});
+testMouse.addEventListener("mouseup", function() {changeColorTestMouse("pink", "mouseup")});
+testMouse.addEventListener("dblclick", function() {changeColorTestMouse("red", "dblclick")});
+testMouse.addEventListener("mouseout", function() {changeColorTestMouse("black", "mouseout")});
