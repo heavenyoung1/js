@@ -1777,3 +1777,18 @@ testMouse.addEventListener("mouseout", function() {changeColorTestMouse("black",
 function triggerSomething() {
     console.dir(event.target);
 }
+
+// Извлечение данных
+
+function sendInfo(event) {
+    let form = event.target.parentElement;
+
+    let firstName = form.querySelector("input[name='firstname']").value;
+    let lastName = form.querySelector("input[name='lastname']").value;
+
+    msg(`Welcome, ${firstName} ${lastName}`);
+}
+
+function msg(m) {
+    document.getElementById("WelcomeMsg").innerHTML = m;
+}
