@@ -1750,7 +1750,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 // Как только HTML полностью загружен срабатывает DOMContentLoaded
 // Когда загружены ВСЕ ресурсы страницы срабатывает window.onload,
 
-// Практическое занятие 11.3
+// Практическое занятие 11.4
 
 let testMouse = document.createElement("div");
 testMouse.setAttribute("id", "testMouseID")
@@ -1771,3 +1771,9 @@ testMouse.addEventListener("mousedown", function() {changeColorTestMouse("green"
 testMouse.addEventListener("mouseup", function() {changeColorTestMouse("pink", "mouseup")});
 testMouse.addEventListener("dblclick", function() {changeColorTestMouse("red", "dblclick")});
 testMouse.addEventListener("mouseout", function() {changeColorTestMouse("black", "mouseout")});
+
+// Свойство события target 
+
+function triggerSomething() {
+    console.dir(event.target);
+}
