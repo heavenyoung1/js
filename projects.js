@@ -336,21 +336,27 @@ addRowToTable();
 
 // Игра "Виселица"
 
-let words = ["APPLE", "ORANGE", "BANANA"];
+function build() {
+  let words = ["APPLE", "ORANGE", "BANANA"];
 
-let letterArray = [];
+  let letterArray = [];
 
-let guessWord = words[Math.floor(Math.random() * words.length)];
-console.log(guessWord.split(""));
-let ourContainer = document.getElementById("container3");
-let wordContainer = ourContainer.createElement("div");
-guessWord.forEach((letter, index) => {
-  let letterSpan = wordContainer.createElement("span");
-  letterSpan.textContent = "_";
-  wordContainer.appendChild(letterSpan);
-  letterArray.push(letterSpan)
+  let guessWord = words[Math.floor(Math.random() * words.length)];
+  let wordArray = guessWord.split("");
+  let ourContainer = document.getElementById("container3");
+
+  // Создаем контейнер для отображения слова
+  let wordContainer = document.createElement("div");
+    // Создаем span для каждой буквы и добавляем в контейнер
+  wordArray.forEach((letter, index) => {
+    let letterSpan = document.createElement("span");
+    letterSpan.textContent = "_";
+    wordContainer.appendChild(letterSpan);
+    letterArray.push(letterSpan);
+    })
+
+    ourContainer.innerHTML = ""; // Очищаем контейнер
+    ourContainer.appendChild(wordContainer);
 }
 
-)
-
-
+build()
