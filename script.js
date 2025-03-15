@@ -1790,3 +1790,11 @@ function getLog(event) {
 btn1.addEventListener("click", getLog);
 btn2.addEventListener("click", getLog);
 btn3.addEventListener("click", () => console.log(logs));
+
+function bubble() {
+    console.log(this.innerText);
+}
+let divs = document.getElementsByTagName("div");
+for (let i = 0; i < divs.length; i++) {
+  divs[i].addEventListener("click", bubble, true);
+}

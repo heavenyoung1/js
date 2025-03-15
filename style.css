@@ -102,3 +102,8 @@ border: 1px solid #ccc;
 border-radius: 5px;
 font-size: 1.5em;
 }
+
+.message2 {
+  border: 1px solid black;
+  margin-left: 5px;
+}
