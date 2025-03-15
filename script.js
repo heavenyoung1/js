@@ -1820,3 +1820,13 @@ boxes.forEach(box => {
         console.log(`Click on ${this.textContent}`);
     }, true);
 })
+
+// Практическое занятие 11.7
+let fname = document.querySelector("input[name='first']");
+let lname = document.querySelector("input[name='last']");
+
+function logEvent() {
+    console.log("Изменилось)")
+}
+
+fname.addEventListener("change", logEvent);
