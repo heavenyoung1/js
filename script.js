@@ -1829,4 +1829,17 @@ function logEvent() {
     console.log("Изменилось)")
 }
 
-fname.addEventListener("change", logEvent);
+fname.addEventListener("change", returnValue);
+lname.addEventListener("change", returnValue);
+
+fname.addEventListener("blur", () => console.log("blur"));
+lname.addEventListener("blur", () => console.log("blur"));
+
+fname.addEventListener("focus", () => console.log("focus"));
+lname.addEventListener("focus", () => console.log("focus"));
+
+function returnValue() {
+    fValue = fname.value;
+    lValue = lname.value;
+    console.log(fValue, lValue);
+}
