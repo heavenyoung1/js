@@ -1798,3 +1798,25 @@ let divs = document.getElementsByTagName("div");
 for (let i = 0; i < divs.length; i++) {
   divs[i].addEventListener("click", bubble, true);
 }
+
+// Практическое занятие 11.6
+let boxes = document.querySelectorAll(".box");
+let container1 = document.querySelector("container_part11");
+console.log(boxes);
+
+container1.addEventListener("click", function() {console.log(4)}, false);
+container1.addEventListener("click", function() {console.log(1)}, true);
+
+boxes.forEach(box => {
+    box.addEventListener("click", function(event) {
+        console.log(3);
+        console.log(`Click on ${event.target.textContent}`);
+    }, false);
+})
+
+boxes.forEach(box => {
+    box.addEventListener("click", function(event) {
+        console.log(2);
+        console.log(`Click on ${event.target.textContent}`);
+    }, true);
+})
