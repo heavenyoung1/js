@@ -1762,8 +1762,8 @@ document.body.appendChild(testMouse)
 
 // Практическое занятие 11.5
 let divOutput = document.querySelector(".output");
-let inputField = document.getElementsByName("message[0]");
-//let inputField = document.querySelector("[name='message']"); // Альтерниативный вариант
+//let inputField = document.getElementsByName("message[0]");
+let inputField = document.querySelector("[name='message']"); // Альтерниативный вариант
 let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
 let btn3 = document.querySelector(".btn3");
@@ -1771,9 +1771,9 @@ let btn3 = document.querySelector(".btn3");
 let logs = [];
 
 function getLog(event) {
-    let inputvalue = document.querySelector("[name='message']").value;
+    let inputValue = document.querySelector("[name='message']").value;
     let divOutput = document.querySelector(".output");
-    divOutput.textContent = inputvalue;
+    divOutput.textContent = inputValue;
 
     let eventData = {
         text: inputValue,
@@ -1783,10 +1783,10 @@ function getLog(event) {
     };
 
     logs.push(eventData);
-    div.textContent = "" // Очистка div после записи в log
+    divOutput.textContent = "" // Очистка div после записи в log
 
 }
 
 btn1.addEventListener("click", getLog);
 btn2.addEventListener("click", getLog);
-btn3.addEventListener("click", console.log(logs));
+btn3.addEventListener("click", () => console.log(logs));
