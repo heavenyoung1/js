@@ -715,9 +715,9 @@ arrOfShapes.forEach(e => console.log(e));
 
 // Оператор spread
 
-let spread = ["so", "much", "fun"];
-let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
-console.log(message);
+// let spread = ["so", "much", "fun"];
+// let message = ["JavaScript", "is", ...spread, "and", "very", "powerful"];
+// console.log(message);
 
 function addTwoNumbersFirst(x, y) {
     console.log(x + y);
@@ -1553,9 +1553,9 @@ function revealOne (el) {
 
 // Практическое занятие 10.7
 
-function messageQ (element) {
-    console.log(element.innerText)
-}
+// function messageQ (element) {
+//     console.log(element.innerText)
+// }
 
 // Управление стилем элемента
 
@@ -1735,9 +1735,9 @@ console.log()
 
 //Практическое занятие 11.3
 
-function message1(textMsg, objectMsg) {
-    console.log(textMsg, objectMsg);
-} 
+// function message1(textMsg, objectMsg) {
+//     console.log(textMsg, objectMsg);
+// } 
 
 window.onload = function(e) {
     message1("Window Ready", e);
@@ -1861,3 +1861,15 @@ lname.addEventListener("blur", () => console.log("blur (last name)"));
 
 fname.addEventListener("focus", () => console.log("focus (first name)"));
 lname.addEventListener("focus", () => console.log("focus (last name)"));
+
+// event.key получение значение клавиши
+
+function message(m) {
+    document.getElementById("wrapper").innerText = m;
+}
+
+function numCheck() {
+    message(`Число ${isNaN(event.key)}`);
+    return isNaN(event.key);
+
+}
