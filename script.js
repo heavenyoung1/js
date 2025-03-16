@@ -1869,7 +1869,11 @@ function message(m) {
 }
 
 function numCheck() {
-    message(`Число ${isNaN(event.key)}`);
-    return isNaN(event.key);
+    message(`Не число ${isNaN(event.key)}`);
+    return !isNaN(event.key);
+}
 
+function numCheck2() {
+    message(`Число ${!isNaN(event.key)}`);
+    return isNaN(event.key);
 }
