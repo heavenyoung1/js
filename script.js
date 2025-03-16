@@ -1822,24 +1822,42 @@ boxes.forEach(box => {
 })
 
 // Практическое занятие 11.7
+// let fname = document.querySelector("input[name='first']");
+// let lname = document.querySelector("input[name='last']");
+
+// function logEvent() {
+//     console.log("Изменилось)")
+// }
+
+// fname.addEventListener("change", returnValue);
+// lname.addEventListener("change", returnValue);
+
+// fname.addEventListener("blur", () => console.log("blur"));
+// lname.addEventListener("blur", () => console.log("blur"));
+
+// fname.addEventListener("focus", () => console.log("focus"));
+// lname.addEventListener("focus", () => console.log("focus"));
+
+// function returnValue() {
+//     fValue = fname.value;
+//     lValue = lname.value;
+//     console.log(fValue, lValue);
+// }
+
+let output1 = document.querySelector(".output1");
+
 let fname = document.querySelector("input[name='first']");
 let lname = document.querySelector("input[name='last']");
 
-function logEvent() {
-    console.log("Изменилось)")
+fname.addEventListener("change", updateOutput);
+lname.addEventListener("change", updateOutput);
+
+function updateOutput() {
+    output1.textContent = `Имя: ${fname.value}, Фамилия: ${lname.value}`;
 }
 
-fname.addEventListener("change", returnValue);
-lname.addEventListener("change", returnValue);
+fname.addEventListener("blur", () => console.log("blur (first name)"));
+lname.addEventListener("blur", () => console.log("blur (last name)"));
 
-fname.addEventListener("blur", () => console.log("blur"));
-lname.addEventListener("blur", () => console.log("blur"));
-
-fname.addEventListener("focus", () => console.log("focus"));
-lname.addEventListener("focus", () => console.log("focus"));
-
-function returnValue() {
-    fValue = fname.value;
-    lValue = lname.value;
-    console.log(fValue, lValue);
-}
+fname.addEventListener("focus", () => console.log("focus (first name)"));
+lname.addEventListener("focus", () => console.log("focus (last name)"));
