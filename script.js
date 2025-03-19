@@ -1739,13 +1739,13 @@ console.log()
 //     console.log(textMsg, objectMsg);
 // } 
 
-window.onload = function(e) {
-    message1("Window Ready", e);
-}
+// window.onload = function(e) {
+//     message1("Window Ready", e);
+// }
 
-document.addEventListener("DOMContentLoaded", function(e) {
-    message1("Document Ready", e);
-})
+// document.addEventListener("DOMContentLoaded", function(e) {
+//     message1("Document Ready", e);
+// })
 
 // Как только HTML полностью загружен срабатывает DOMContentLoaded
 // Когда загружены ВСЕ ресурсы страницы срабатывает window.onload,
@@ -1877,3 +1877,21 @@ function numCheck2() {
     message(`Число ${!isNaN(event.key)}`);
     return isNaN(event.key);
 }
+
+// Практическое занятие 11.8
+function sendMessage(tag, text) {
+    document.getElementById(tag).innerText = text;
+    return
+}
+
+function checkNaN() {
+    sendMessage("output118", `Это число ${isNaN(event.variable1)}`);
+}
+
+eles = document.querySelectorAll(".class118");
+eles.forEach((element) => {
+    element.addEventListener("keydown", checkNaN);
+    element.addEventListener("keyup", checkNaN);
+});
+
+console.log(eles);
