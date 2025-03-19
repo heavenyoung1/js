@@ -1879,19 +1879,28 @@ function numCheck2() {
 }
 
 // Практическое занятие 11.8
+eles = document.querySelectorAll(".class118");
+el118 = document.querySelector(".class118");
+
 function sendMessage(tag, text) {
     document.getElementById(tag).innerText = text;
     return
 }
 
-function checkNaN() {
-    sendMessage("output118", `Это число ${isNaN(event.variable1)}`);
+function checkNaN(event) {
+    let value = event.target.value;
+    if (isNaN(value)) {
+        sendMessage("output118", `Это НЕ число ${isNaN(value)}`);
+    } if(!isNaN(value)) {
+        sendMessage("output118", `Это число ${isNaN(value)}`);
+}}
+
+function checkKey(event) {
+    sendMessage("output118_1", event.key);
 }
 
-eles = document.querySelectorAll(".class118");
+
 eles.forEach((element) => {
     element.addEventListener("keydown", checkNaN);
-    element.addEventListener("keyup", checkNaN);
+    element.addEventListener("keyup", checkKey);
 });
-
-console.log(eles);
