@@ -1908,7 +1908,6 @@ eles.forEach((element) => {
 console.log(eles);
 
 // Перетаскиваемые элементы
-
 let holderItem;
 
 function dStart() {
@@ -1916,7 +1915,7 @@ function dStart() {
 }
 
 function nDrop() {
-    event.preventDefault;
+    event.preventDefault();
 }
 
 function dDrop() {
