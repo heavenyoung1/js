@@ -1910,17 +1910,18 @@ console.log(eles);
 // Перетаскиваемые элементы
 
 let holderItem;
+
 function dStart() {
     holderItem = event.target;
 }
 
-function nDrop {
+function nDrop() {
     event.preventDefault;
 }
 
-function dDrop {
+function dDrop() {
     event.preventDefault();
-    if (event.target.className == "box") {
+    if (event.target.className == "boxLol") {
         event.target.appendChild(holderItem);
     }
 }
