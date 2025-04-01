@@ -1935,5 +1935,13 @@ dragItem.addEventListener("dragstart", (event) => {
 
 dragItem.addEventListener("dragend", () => {
     console.log("Drag ended");
-    event.style.opacity = "0";
+    event.style.opacity = "1";
 })
+
+const dropZones = document.querySelectorAll(".boxNon");
+
+dropZones.forEach((zone) => {
+    zone.addEventListener("dragevent", (event) => {
+    event.target.classList.add("red");
+    });
+});
