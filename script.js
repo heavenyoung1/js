@@ -1924,3 +1924,16 @@ function dDrop() {
         event.target.appendChild(holderItem);
     }
 }
+
+// Практическое занятие 11.9
+let dragItem = document.getElementById("dragme1");
+
+dragItem.addEventListener("dragstart", (event) => {
+    console.log("Drag started");
+    event.target.style.opacity = "0,5";
+});
+
+dragItem.addEventListener("dragend", () => {
+    console.log("Drag ended");
+    event.style.opacity = "0";
+})

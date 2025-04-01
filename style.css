@@ -121,3 +121,14 @@ font-size: 1.5em;
 #dragme {
   background-color: red;
   }
+
+.boxNon {
+  width: 100px;
+  height: 100px;
+  border: 1px solid pink;
+  background-color: #D2691E;
+}
+
+.red {
+  background-color: red;
+}
