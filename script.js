@@ -1945,3 +1945,18 @@ dropZones.forEach((zone) => {
     event.target.classList.add("red");
     });
 });
+
+dropZones.forEach((zone) => {
+    zone.addEventListener("dragover", (event) => {
+        event.preventDefault;
+        console.log("Dragging ended");
+    });
+});
+
+dropZones.forEach((zone) => {
+    zone.addEventListener("dragleave", (event) => {
+        event.target.classList.remove("red");
+        console.log("Dragging left");
+    })
+});
+
